@@ -15,26 +15,28 @@ var child = require('child_process'),
 // CLI program configuring
 program
     .version(config.version)
-    .description(chalk.cyan.bold('ctrace - improved syscalls details and more readable output'))
+    .description(chalk.cyan.bold(
+        'ctrace - well-formatted and improved trace system calls and signals (when the debugger does not help)'
+    ))
     .option('-p, --pid [pid]', 'process id to trace')
     .option('-c, --cmd [cmd]', 'command to trace')
     .option('-f, --filter [syscall,]', 'trace syscall only from list', function(value) {
         return value.split(',');
     })
-    .option('-v, --verbose', 'print all syscalls (by default only with errors)');
-program.on('--help', function(){
-    console.log('  Examples:');
-    console.log('');
-    console.log('    $ ctrace -p 2312 -v');
-    console.log('    $ ctrace -c "ping google.com"');
-    console.log('');
-});
+    .option('-v, --verbose', 'print all syscalls (by default only with errors)')
+    .on('--help', function(){
+        console.log('  Examples:');
+        console.log('');
+        console.log('    $ ctrace -p 2312 -v');
+        console.log('    $ ctrace -c "ping google.com"');
+        console.log('');
+    });
 program.parse(process.argv);
 
 // Platform specific binary and arguments
 var utility = {
-        'darwin': {bin: 'dtruss', args: '-e -f -L'},
-        'linux': {bin: 'strace', args: '-y -v -x -f -tt -T'}
+        'darwin': {bin: 'dtruss', args: ['-e', '-f', '-L']},
+        'linux': {bin: 'strace', args: ['-y', '-v', '-x', '-f', '-tt', '-T']}
     },
     parser = { 'linux': parseStraceData, 'darwin': parseDtrussData};
 
@@ -46,23 +48,24 @@ function getCommandLine() {
         process.exit();
     }
     // Build command and arguments
-    var cmd = utility[platform].bin + ' ' + utility[platform].args;
+    var args = utility[platform].args;
     if (program.cmd && typeof program.cmd == 'string') {
-        cmd += ' ' + program.cmd;
+        args = args.concat(program.cmd.split(' '));
     } else if (program.pid) {
-        cmd += ' -p ' + program.pid;
+        args.push('-p');
+        args.push(program.pid);
     } else {
         program.help();
         process.exit();
     }
-    return cmd;
+    return {bin: utility[platform].bin, args: args};
 }
 
 function spawnSubprocess() {
 
     var cp, cmd = getCommandLine(), delimiter = Array(5).join('-');
     // Spawn strace with command
-    cp = child.exec(cmd, {env: process.env});
+    cp = child.spawn(cmd.bin, cmd.args, {env: process.env});
     cp.stdout.chunks = 0;
     // Target command output on stdout, stderr output will be ignored
     cp.stdout.on('data', function(data) {
@@ -77,7 +80,7 @@ function spawnSubprocess() {
     });
     // Strace output on stderr
     cp.stderr.on('data', function(data) {
-        data = data.split('\n');
+        data = data.toString().split('\n');
         // Parse row tails
         if (cp.stderr.tail) {
             data[0] = cp.stderr.tail + data[0];
@@ -136,7 +139,7 @@ function parseStraceData(data) {
         var unfinished = row.match(/unfinished/),
             resumed = row.match(/resumed/);
         if (!row.match(/^(\d{2}:|\[).+\d+>$/) && !unfinished && !resumed) {
-            log(chalk.grey(row)); return;
+            log(chalk.grey(row.replace(/\s+/, ' '))); return;
         }
         // Detect syscalls from child processes
         var fork = row.match(/(\[pid\s+\d+\])\s(.+)/);
