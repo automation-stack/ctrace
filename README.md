@@ -1,5 +1,5 @@
 # ctrace
-well-formatted and improved trace system calls and signals (when the debugger does not help)
+Well-formatted and improved trace system calls and signals (when the debugger does not help).
 
 <img src="http://g.recordit.co/AKdHxKdzqy.gif" width="45%"/>
 <img src="http://g.recordit.co/66Xzz2TGHS.gif" width="45%"/>
@@ -8,7 +8,7 @@ well-formatted and improved trace system calls and signals (when the debugger do
 Awesome tools ```strace``` and ```dtruss``` have only one drawback: too much information which is hard to understand without additional sources of information and various configuration options. ```ctrace``` resolves it.
 
 ```ctrace``` are indispensable in the following cases
-   - Debugging performance issues or unhandled errors and exceptions in own code or someone else's code
+   - Debugging complex performance issues or not identified unhandled errors and exceptions in own code or someone else's code
    - Learning OS kernel
 
 
