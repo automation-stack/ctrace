@@ -1,13 +1,12 @@
 {
   "name": "ctrace",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "well-formatted and improved trace system calls and signals (when the debugger does not help)",
   "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:automation-stack/ctrace.git"
   },
-  "description": "well-formatted and improved trace system calls and signals (when the debugger does not help)",
   "keywords": [
     "debug",
     "debugger",
@@ -22,7 +21,9 @@
     "colored output",
     "trobleshooting"
   ],
-  "bin" : { "ctrace" : "./bin/ctrace" },
+  "bin": {
+    "ctrace": "./bin/ctrace"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
