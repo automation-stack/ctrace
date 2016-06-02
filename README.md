@@ -1,5 +1,5 @@
 # ctrace
-well-formatted and improved trace system calls and signals
+well-formatted and improved trace system calls and signals (when the debugger does not help)
 
 <img src="http://g.recordit.co/AKdHxKdzqy.gif" width="45%"/>
 <img src="http://g.recordit.co/66Xzz2TGHS.gif" width="45%"/>
