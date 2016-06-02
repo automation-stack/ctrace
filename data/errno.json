@@ -1,0 +1,499 @@
+{
+    "darwin": {
+        "1": {
+            "code": "EPERM",
+            "number": 1,
+            "desc": "Operation not permitted"
+        },
+        "2": {
+            "code": "ENOENT",
+            "number": 2,
+            "desc": "No such file or directory"
+        },
+        "3": {
+            "code": "ESRCH",
+            "number": 3,
+            "desc": "No such process"
+        },
+        "4": {
+            "code": "EINTR",
+            "number": 4,
+            "desc": "Interrupted function call"
+        },
+        "5": {
+            "code": "EIO",
+            "number": 5,
+            "desc": "Input/output error"
+        },
+        "6": {
+            "code": "ENXIO",
+            "number": 6,
+            "desc": "No such device or address"
+        },
+        "8": {
+            "code": "ENOEXEC",
+            "number": 8,
+            "desc": "Exec format error"
+        },
+        "9": {
+            "code": "EBADF",
+            "number": 9,
+            "desc": "Bad file descriptor"
+        },
+        "10": {
+            "code": "ECHILD",
+            "number": 10,
+            "desc": "No child processes"
+        },
+        "11": {
+            "code": "EDEADLK",
+            "number": 11,
+            "desc": "Resource deadlock avoided"
+        },
+        "12": {
+            "code": "ENOMEM",
+            "number": 12,
+            "desc": "Cannot allocate memory"
+        },
+        "13": {
+            "code": "EACCES",
+            "number": 13,
+            "desc": "Permission denied"
+        },
+        "14": {
+            "code": "EFAULT",
+            "number": 14,
+            "desc": "Bad address"
+        },
+        "15": {
+            "code": "ENOTBLK",
+            "number": 15,
+            "desc": "Not a block device"
+        },
+        "16": {
+            "code": "EBUSY",
+            "number": 16,
+            "desc": "Resource busy"
+        },
+        "17": {
+            "code": "EEXIST",
+            "number": 17,
+            "desc": "File exists"
+        },
+        "18": {
+            "code": "EXDEV",
+            "number": 18,
+            "desc": "Improper link"
+        },
+        "19": {
+            "code": "ENODEV",
+            "number": 19,
+            "desc": "Operation not supported by device"
+        },
+        "20": {
+            "code": "ENOTDIR",
+            "number": 20,
+            "desc": "Not a directory"
+        },
+        "21": {
+            "code": "EISDIR",
+            "number": 21,
+            "desc": "Is a directory"
+        },
+        "22": {
+            "code": "EINVAL",
+            "number": 22,
+            "desc": "Invalid argument"
+        },
+        "23": {
+            "code": "ENFILE",
+            "number": 23,
+            "desc": "Too many open files in system"
+        },
+        "24": {
+            "code": "EMFILE",
+            "number": 24,
+            "desc": "Too many open files"
+        },
+        "25": {
+            "code": "ENOTTY",
+            "number": 25,
+            "desc": "Inappropriate ioctl for device"
+        },
+        "26": {
+            "code": "ETXTBSY",
+            "number": 26,
+            "desc": "Text file busy"
+        },
+        "27": {
+            "code": "EFBIG",
+            "number": 27,
+            "desc": "File too large"
+        },
+        "28": {
+            "code": "ENOSPC",
+            "number": 28,
+            "desc": "Device out of space"
+        },
+        "29": {
+            "code": "ESPIPE",
+            "number": 29,
+            "desc": "Illegal seek"
+        },
+        "30": {
+            "code": "EROFS",
+            "number": 30,
+            "desc": "Read-only file system"
+        },
+        "31": {
+            "code": "EMLINK",
+            "number": 31,
+            "desc": "Too many links"
+        },
+        "32": {
+            "code": "EPIPE",
+            "number": 32,
+            "desc": "Broken pipe"
+        },
+        "33": {
+            "code": "EDOM",
+            "number": 33,
+            "desc": "Numerical argument out of domain"
+        },
+        "34": {
+            "code": "ERANGE",
+            "number": 34,
+            "desc": "Numerical result out of range"
+        },
+        "35": {
+            "code": "EAGAIN",
+            "number": 35,
+            "desc": "Resource temporarily unavailable"
+        },
+        "36": {
+            "code": "EINPROGRESS",
+            "number": 36,
+            "desc": "Operation now in progress"
+        },
+        "37": {
+            "code": "EALREADY",
+            "number": 37,
+            "desc": "Operation already in progress"
+        },
+        "38": {
+            "code": "ENOTSOCK",
+            "number": 38,
+            "desc": "Socket operation on non-socket"
+        },
+        "39": {
+            "code": "EDESTADDRREQ",
+            "number": 39,
+            "desc": "Destination address required"
+        },
+        "40": {
+            "code": "EMSGSIZE",
+            "number": 40,
+            "desc": "Message too long"
+        },
+        "41": {
+            "code": "EPROTOTYPE",
+            "number": 41,
+            "desc": "Protocol wrong type for socket"
+        },
+        "42": {
+            "code": "ENOPROTOOPT",
+            "number": 42,
+            "desc": "Protocol not available"
+        },
+        "43": {
+            "code": "EPROTONOSUPPORT",
+            "number": 43,
+            "desc": "Protocol not supported"
+        },
+        "44": {
+            "code": "ESOCKTNOSUPPORT",
+            "number": 44,
+            "desc": "Socket type not supported"
+        },
+        "45": {
+            "code": "ENOTSUP",
+            "number": 45,
+            "desc": "Not supported"
+        },
+        "46": {
+            "code": "EPFNOSUPPORT",
+            "number": 46,
+            "desc": "Protocol family not supported"
+        },
+        "47": {
+            "code": "EAFNOSUPPORT",
+            "number": 47,
+            "desc": "Address family not supported by protocol family"
+        },
+        "48": {
+            "code": "EADDRINUSE",
+            "number": 48,
+            "desc": "Address already in use"
+        },
+        "49": {
+            "code": "EADDRNOTAVAIL",
+            "number": 49,
+            "desc": "Cannot assign requested address"
+        },
+        "50": {
+            "code": "ENETDOWN",
+            "number": 50,
+            "desc": "Network is down"
+        },
+        "51": {
+            "code": "ENETUNREACH",
+            "number": 51,
+            "desc": "Network is unreachable"
+        },
+        "52": {
+            "code": "ENETRESET",
+            "number": 52,
+            "desc": "Network dropped connection on reset"
+        },
+        "53": {
+            "code": "ECONNABORTED",
+            "number": 53,
+            "desc": "Software caused connection abort"
+        },
+        "54": {
+            "code": "ECONNRESET",
+            "number": 54,
+            "desc": "Connection reset by peer"
+        },
+        "55": {
+            "code": "ENOBUFS",
+            "number": 55,
+            "desc": "No buffer space available"
+        },
+        "56": {
+            "code": "EISCONN",
+            "number": 56,
+            "desc": "Socket is already connected"
+        },
+        "57": {
+            "code": "ENOTCONN",
+            "number": 57,
+            "desc": "Socket is not connected"
+        },
+        "58": {
+            "code": "ESHUTDOWN",
+            "number": 58,
+            "desc": "Cannot send after socket shutdown"
+        },
+        "60": {
+            "code": "ETIMEDOUT",
+            "number": 60,
+            "desc": "Operation timed out"
+        },
+        "61": {
+            "code": "ECONNREFUSED",
+            "number": 61,
+            "desc": "Connection refused"
+        },
+        "62": {
+            "code": "ELOOP",
+            "number": 62,
+            "desc": "Too many levels of symbolic links"
+        },
+        "63": {
+            "code": "ENAMETOOLONG",
+            "number": 63,
+            "desc": "File name too long"
+        },
+        "64": {
+            "code": "EHOSTDOWN",
+            "number": 64,
+            "desc": "Host is down"
+        },
+        "65": {
+            "code": "EHOSTUNREACH",
+            "number": 65,
+            "desc": "No route to host"
+        },
+        "66": {
+            "code": "ENOTEMPTY",
+            "number": 66,
+            "desc": "Directory not empty"
+        },
+        "67": {
+            "code": "EPROCLIM",
+            "number": 67,
+            "desc": "Too many processes"
+        },
+        "68": {
+            "code": "EUSERS",
+            "number": 68,
+            "desc": "Too many users"
+        },
+        "69": {
+            "code": "EDQUOT",
+            "number": 69,
+            "desc": "Disc quota exceeded"
+        },
+        "70": {
+            "code": "ESTALE",
+            "number": 70,
+            "desc": "Stale NFS file handle"
+        },
+        "72": {
+            "code": "EBADRPC",
+            "number": 72,
+            "desc": "RPC struct is bad"
+        },
+        "73": {
+            "code": "ERPCMISMATCH",
+            "number": 73,
+            "desc": "RPC version wrong"
+        },
+        "74": {
+            "code": "EPROGUNAVAIL",
+            "number": 74,
+            "desc": "RPC prog"
+        },
+        "75": {
+            "code": "EPROGMISMATCH",
+            "number": 75,
+            "desc": "Program version wrong"
+        },
+        "76": {
+            "code": "EPROCUNAVAIL",
+            "number": 76,
+            "desc": "Bad procedure for program"
+        },
+        "77": {
+            "code": "ENOLCK",
+            "number": 77,
+            "desc": "No locks available"
+        },
+        "78": {
+            "code": "ENOSYS",
+            "number": 78,
+            "desc": "Function not implemented"
+        },
+        "79": {
+            "code": "EFTYPE",
+            "number": 79,
+            "desc": "Inappropriate file type or format"
+        },
+        "80": {
+            "code": "EAUTH",
+            "number": 80,
+            "desc": "Authentication error"
+        },
+        "81": {
+            "code": "ENEEDAUTH",
+            "number": 81,
+            "desc": "Need authenticator"
+        },
+        "82": {
+            "code": "EPWROFF",
+            "number": 82,
+            "desc": "Device power is off"
+        },
+        "83": {
+            "code": "EDEVERR",
+            "number": 83,
+            "desc": "Device error"
+        },
+        "84": {
+            "code": "EOVERFLOW",
+            "number": 84,
+            "desc": "Value too large to be stored in data type"
+        },
+        "85": {
+            "code": "EBADEXEC",
+            "number": 85,
+            "desc": "Bad executable (or shared library)"
+        },
+        "86": {
+            "code": "EBADARCH",
+            "number": 86,
+            "desc": "Bad CPU type in executable"
+        },
+        "87": {
+            "code": "ESHLIBVERS",
+            "number": 87,
+            "desc": "Shared library version mismatch"
+        },
+        "88": {
+            "code": "EBADMACHO",
+            "number": 88,
+            "desc": "Malformed Mach-o file"
+        },
+        "89": {
+            "code": "ECANCELED",
+            "number": 89,
+            "desc": "Operation canceled"
+        },
+        "90": {
+            "code": "EIDRM",
+            "number": 90,
+            "desc": "Identifier removed"
+        },
+        "91": {
+            "code": "ENOMSG",
+            "number": 91,
+            "desc": "No message of desired type"
+        },
+        "92": {
+            "code": "EILSEQ",
+            "number": 92,
+            "desc": "Illegal byte sequence"
+        },
+        "93": {
+            "code": "ENOATTR",
+            "number": 93,
+            "desc": "Attribute not found"
+        },
+        "94": {
+            "code": "EBADMSG",
+            "number": 94,
+            "desc": "Bad message"
+        },
+        "95": {
+            "code": "EMULTIHOP",
+            "number": 95,
+            "desc": "Reserved"
+        },
+        "96": {
+            "code": "ENODATA",
+            "number": 96,
+            "desc": "No message available"
+        },
+        "97": {
+            "code": "ENOLINK",
+            "number": 97,
+            "desc": "Reserved"
+        },
+        "98": {
+            "code": "ENOSR",
+            "number": 98,
+            "desc": "No STREAM resources"
+        },
+        "99": {
+            "code": "ENOSTR",
+            "number": 99,
+            "desc": "Not a STREAM"
+        },
+        "100": {
+            "code": "EPROTO",
+            "number": 100,
+            "desc": "Protocol error"
+        },
+        "101": {
+            "code": "ETIME",
+            "number": 101,
+            "desc": "STREAM ioctl() timeout"
+        },
+        "102": {
+            "code": "EOPNOTSUPP",
+            "number": 102,
+            "desc": "Operation not supported on socket"
+        }
+    }
+}

@@ -1,0 +1,4376 @@
+{
+    "name_to_handle_at": {
+        "linux": {
+            "number": 303,
+            "name": "name_to_handle_at",
+            "desc": "obtain handle for a pathname"
+        }
+    },
+    "posix_spawn": {
+        "darwin": {
+            "number": 244,
+            "name": "posix_spawn",
+            "desc": "spawn a process"
+        }
+    },
+    "getlcid": {
+        "darwin": {
+            "number": 395,
+            "name": "getlcid",
+            "desc": "get login context"
+        }
+    },
+    "revoke": {
+        "darwin": {
+            "number": 56,
+            "name": "revoke",
+            "desc": "revoke file access"
+        }
+    },
+    "workq_open": {
+        "darwin": {
+            "name": "workq_open",
+            "number": 367
+        }
+    },
+    "vmsplice": {
+        "linux": {
+            "number": 532,
+            "name": "vmsplice",
+            "desc": "splice user pages into a pipe"
+        }
+    },
+    "setfsuid": {
+        "linux": {
+            "number": 122,
+            "name": "setfsuid",
+            "desc": "set user identity used for filesystem checks"
+        }
+    },
+    "aio_read": {
+        "darwin": {
+            "number": 318,
+            "name": "aio_read",
+            "desc": "asynchronous read from a file (REALTIME)"
+        }
+    },
+    "mq_unlink": {
+        "linux": {
+            "number": 241,
+            "name": "mq_unlink",
+            "desc": "remove a message queue"
+        }
+    },
+    "fsgetpath": {
+        "darwin": {
+            "name": "fsgetpath",
+            "number": 427
+        }
+    },
+    "thread_selfusage": {
+        "darwin": {
+            "name": "thread_selfusage",
+            "number": 482
+        }
+    },
+    "newfstatat": {
+        "linux": {
+            "number": 262,
+            "name": "newfstatat",
+            "desc": "get file status"
+        }
+    },
+    "kqueue": {
+        "darwin": {
+            "number": 362,
+            "name": "kqueue",
+            "desc": "kernel event notification mechanism"
+        }
+    },
+    "getresgid": {
+        "linux": {
+            "number": 120,
+            "name": "getresgid",
+            "desc": "get real, effective and saved user/group IDs"
+        }
+    },
+    "mkdir_extended": {
+        "darwin": {
+            "name": "mkdir_extended",
+            "number": 292
+        }
+    },
+    "kevent64": {
+        "darwin": {
+            "number": 369,
+            "name": "kevent64",
+            "desc": "kernel event notification mechanism"
+        }
+    },
+    "__sigwait_nocancel": {
+        "darwin": {
+            "name": "__sigwait_nocancel",
+            "number": 422
+        }
+    },
+    "sched_getaffinity": {
+        "linux": {
+            "number": 204,
+            "name": "sched_getaffinity",
+            "desc": "set  and get a thread's CPU"
+        }
+    },
+    "fadvise64": {
+        "linux": {
+            "number": 221,
+            "name": "fadvise64",
+            "desc": "predeclare an access pattern for file data"
+        }
+    },
+    "sched_setparam": {
+        "linux": {
+            "number": 142,
+            "name": "sched_setparam",
+            "desc": "set and get scheduling parameters"
+        }
+    },
+    "csrctl": {
+        "darwin": {
+            "name": "csrctl",
+            "number": 483
+        }
+    },
+    "shm_unlink": {
+        "darwin": {
+            "number": 267,
+            "name": "shm_unlink",
+            "desc": "remove shared memory object"
+        }
+    },
+    "signalfd4": {
+        "linux": {
+            "number": 289,
+            "name": "signalfd4",
+            "desc": "create a file descriptor for accepting signals"
+        }
+    },
+    "memfd_create": {
+        "linux": {
+            "number": 319,
+            "name": "memfd_create",
+            "desc": "create an anonymous file"
+        }
+    },
+    "aio_suspend": {
+        "darwin": {
+            "number": 315,
+            "name": "aio_suspend",
+            "desc": "suspend until asynchronous I/O operations or timeout complete (REALTIME)"
+        }
+    },
+    "remap_file_pages": {
+        "linux": {
+            "number": 216,
+            "name": "remap_file_pages",
+            "desc": "create a nonlinear file mapping"
+        }
+    },
+    "connectx": {
+        "darwin": {
+            "name": "connectx",
+            "number": 447
+        }
+    },
+    "aio_cancel": {
+        "darwin": {
+            "number": 316,
+            "name": "aio_cancel",
+            "desc": "cancel an outstanding asynchronous I/O operation (REALTIME)"
+        }
+    },
+    "psynch_rw_yieldwrlock": {
+        "darwin": {
+            "name": "psynch_rw_yieldwrlock",
+            "number": 298
+        }
+    },
+    "getppid": {
+        "darwin": {
+            "number": 39,
+            "name": "getppid",
+            "desc": "get parent or calling process identification"
+        },
+        "linux": {
+            "number": 110,
+            "name": "getppid",
+            "desc": "get process identification"
+        }
+    },
+    "seteuid": {
+        "darwin": {
+            "number": 183,
+            "name": "seteuid",
+            "desc": "set user and group ID"
+        }
+    },
+    "capget": {
+        "linux": {
+            "number": 125,
+            "name": "capget",
+            "desc": "set/get capabilities of thread(s)"
+        }
+    },
+    "msgsnd_nocancel": {
+        "darwin": {
+            "name": "msgsnd_nocancel",
+            "number": 418
+        }
+    },
+    "getauid": {
+        "darwin": {
+            "number": 353,
+            "name": "getauid",
+            "desc": "retrieve audit user ID"
+        }
+    },
+    "utime": {
+        "linux": {
+            "number": 132,
+            "name": "utime",
+            "desc": "change file last access and modification times"
+        }
+    },
+    "sched_setaffinity": {
+        "linux": {
+            "number": 203,
+            "name": "sched_setaffinity",
+            "desc": "set  and get a thread's CPU"
+        }
+    },
+    "recvmsg_x": {
+        "darwin": {
+            "name": "recvmsg_x",
+            "number": 480
+        }
+    },
+    "issetugid": {
+        "darwin": {
+            "number": 327,
+            "name": "issetugid",
+            "desc": "is current process tainted by uid or gid changes"
+        }
+    },
+    "unshare": {
+        "linux": {
+            "number": 272,
+            "name": "unshare",
+            "desc": "disassociate parts of the process execution context"
+        }
+    },
+    "recvfrom": {
+        "darwin": {
+            "number": 29,
+            "name": "recvfrom",
+            "desc": "receive a message from a socket"
+        },
+        "linux": {
+            "number": 517,
+            "name": "recvfrom",
+            "desc": "receive a message from a socket"
+        }
+    },
+    "sched_get_priority_max": {
+        "linux": {
+            "number": 146,
+            "name": "sched_get_priority_max",
+            "desc": "get static priority"
+        }
+    },
+    "setlogin": {
+        "darwin": {
+            "number": 50,
+            "name": "setlogin",
+            "desc": "get/set login name"
+        }
+    },
+    "epoll_create1": {
+        "linux": {
+            "number": 291,
+            "name": "epoll_create1",
+            "desc": "open an epoll file descriptor"
+        }
+    },
+    "audit_session_port": {
+        "darwin": {
+            "name": "audit_session_port",
+            "number": 432
+        }
+    },
+    "inotify_init": {
+        "linux": {
+            "number": 253,
+            "name": "inotify_init",
+            "desc": "initialize an inotify instance"
+        }
+    },
+    "sync": {
+        "darwin": {
+            "number": 36,
+            "name": "sync",
+            "desc": "synchronize disk block in-core status with that on disk"
+        },
+        "linux": {
+            "number": 162,
+            "name": "sync",
+            "desc": "commit filesystem caches to disk"
+        }
+    },
+    "nfsclnt": {
+        "darwin": {
+            "number": 247,
+            "name": "nfsclnt",
+            "desc": "NFS client services"
+        }
+    },
+    "syslog": {
+        "linux": {
+            "number": 103,
+            "name": "syslog",
+            "desc": "read and/or clear kernel message ring buffer; set"
+        }
+    },
+    "mknod": {
+        "darwin": {
+            "number": 14,
+            "name": "mknod",
+            "desc": "make a special file node"
+        },
+        "linux": {
+            "number": 133,
+            "name": "mknod",
+            "desc": "create a special or ordinary file"
+        }
+    },
+    "guarded_kqueue_np": {
+        "darwin": {
+            "name": "guarded_kqueue_np",
+            "number": 443
+        }
+    },
+    "pwritev": {
+        "linux": {
+            "number": 535,
+            "name": "pwritev",
+            "desc": "read or write data into multiple"
+        }
+    },
+    "llistxattr": {
+        "linux": {
+            "number": 195,
+            "name": "llistxattr",
+            "desc": "list extended attribute names"
+        }
+    },
+    "lookup_dcookie": {
+        "linux": {
+            "number": 212,
+            "name": "lookup_dcookie",
+            "desc": "return a directory entry's path"
+        }
+    },
+    "rt_sigprocmask": {
+        "linux": {
+            "number": 14,
+            "name": "rt_sigprocmask",
+            "desc": "examine and change blocked signals"
+        }
+    },
+    "psynch_rw_downgrade": {
+        "darwin": {
+            "name": "psynch_rw_downgrade",
+            "number": 299
+        }
+    },
+    "getrandom": {
+        "linux": {
+            "number": 318,
+            "name": "getrandom",
+            "desc": "obtain a series of random bytes"
+        }
+    },
+    "memorystatus_control": {
+        "darwin": {
+            "name": "memorystatus_control",
+            "number": 440
+        }
+    },
+    "ioperm": {
+        "linux": {
+            "number": 173,
+            "name": "ioperm",
+            "desc": "set port input/output permissions"
+        }
+    },
+    "nfssvc": {
+        "darwin": {
+            "number": 155,
+            "name": "nfssvc",
+            "desc": "NFS services"
+        }
+    },
+    "munmap": {
+        "darwin": {
+            "number": 73,
+            "name": "munmap",
+            "desc": "remove a mapping"
+        },
+        "linux": {
+            "number": 11,
+            "name": "munmap",
+            "desc": "map or unmap files or devices into memory"
+        }
+    },
+    "socketpair": {
+        "darwin": {
+            "number": 135,
+            "name": "socketpair",
+            "desc": "create a pair of connected sockets"
+        },
+        "linux": {
+            "number": 53,
+            "name": "socketpair",
+            "desc": "create a pair of connected sockets"
+        }
+    },
+    "settimeofday": {
+        "darwin": {
+            "number": 122,
+            "name": "settimeofday",
+            "desc": "get/set date and time"
+        },
+        "linux": {
+            "number": 164,
+            "name": "settimeofday",
+            "desc": "get / set time"
+        }
+    },
+    "setresuid": {
+        "linux": {
+            "number": 117,
+            "name": "setresuid",
+            "desc": "set real, effective and saved user or group ID"
+        }
+    },
+    "gethostuuid": {
+        "darwin": {
+            "number": 142,
+            "name": "gethostuuid",
+            "desc": "return a unique identifier for the current machine"
+        }
+    },
+    "setpgid": {
+        "darwin": {
+            "number": 82,
+            "name": "setpgid",
+            "desc": "set process group"
+        },
+        "linux": {
+            "number": 109,
+            "name": "setpgid",
+            "desc": "set/get process group"
+        }
+    },
+    "csops": {
+        "darwin": {
+            "name": "csops",
+            "number": 169
+        }
+    },
+    "sethostname": {
+        "linux": {
+            "number": 170,
+            "name": "sethostname",
+            "desc": "get/set hostname"
+        }
+    },
+    "timer_settime": {
+        "linux": {
+            "number": 223,
+            "name": "timer_settime",
+            "desc": "arm/disarm and fetch state of POSIX"
+        }
+    },
+    "setregid": {
+        "darwin": {
+            "number": 127,
+            "name": "setregid",
+            "desc": "set real and effective group ID"
+        },
+        "linux": {
+            "number": 114,
+            "name": "setregid",
+            "desc": "set real and/or effective user or group ID"
+        }
+    },
+    "fchdir": {
+        "darwin": {
+            "number": 13,
+            "name": "fchdir",
+            "desc": "change current working directory"
+        },
+        "linux": {
+            "number": 81,
+            "name": "fchdir",
+            "desc": "change working directory"
+        }
+    },
+    "ioprio_get": {
+        "linux": {
+            "number": 252,
+            "name": "ioprio_get",
+            "desc": "get/set I/O scheduling class and priority"
+        }
+    },
+    "msgsnd": {
+        "darwin": {
+            "name": "msgsnd",
+            "number": 260
+        },
+        "linux": {
+            "number": 69,
+            "name": "msgsnd",
+            "desc": "System V message queue operations"
+        }
+    },
+    "getsid": {
+        "darwin": {
+            "number": 310,
+            "name": "getsid",
+            "desc": "get process session"
+        },
+        "linux": {
+            "number": 124,
+            "name": "getsid",
+            "desc": "get session ID"
+        }
+    },
+    "fgetattrlist": {
+        "darwin": {
+            "number": 228,
+            "name": "fgetattrlist",
+            "desc": "get file system attributes"
+        }
+    },
+    "eventfd": {
+        "linux": {
+            "number": 284,
+            "name": "eventfd",
+            "desc": "create a file descriptor for event notification"
+        }
+    },
+    "process_vm_readv": {
+        "linux": {
+            "number": 539,
+            "name": "process_vm_readv",
+            "desc": "transfer data between process"
+        }
+    },
+    "pipe2": {
+        "linux": {
+            "number": 293,
+            "name": "pipe2",
+            "desc": "create pipe"
+        }
+    },
+    "setlcid": {
+        "darwin": {
+            "number": 394,
+            "name": "setlcid",
+            "desc": "set login context"
+        }
+    },
+    "perf_event_open": {
+        "linux": {
+            "number": 298,
+            "name": "perf_event_open",
+            "desc": "set up performance monitoring"
+        }
+    },
+    "sendmsg": {
+        "darwin": {
+            "number": 28,
+            "name": "sendmsg",
+            "desc": "send a message from a socket"
+        },
+        "linux": {
+            "number": 518,
+            "name": "sendmsg",
+            "desc": "send a message on a socket"
+        }
+    },
+    "guarded_open_dprotected_np": {
+        "darwin": {
+            "name": "guarded_open_dprotected_np",
+            "number": 484
+        }
+    },
+    "epoll_ctl": {
+        "linux": {
+            "number": 233,
+            "name": "epoll_ctl",
+            "desc": "control interface for an epoll file descriptor"
+        }
+    },
+    "getcpu": {
+        "linux": {
+            "number": 309,
+            "name": "getcpu",
+            "desc": "determine CPU and NUMA node on which the calling thread is"
+        }
+    },
+    "semsys": {
+        "darwin": {
+            "name": "semsys",
+            "number": 251
+        }
+    },
+    "umask": {
+        "darwin": {
+            "number": 60,
+            "name": "umask",
+            "desc": "set file creation mode mask"
+        },
+        "linux": {
+            "number": 95,
+            "name": "umask",
+            "desc": "set file mode creation mask"
+        }
+    },
+    "brk": {
+        "linux": {
+            "number": 12,
+            "name": "brk",
+            "desc": "change data segment size"
+        }
+    },
+    "sched_rr_get_interval": {
+        "linux": {
+            "number": 148,
+            "name": "sched_rr_get_interval",
+            "desc": "get  the  SCHED_RR  interval  for the named"
+        }
+    },
+    "close_nocancel": {
+        "darwin": {
+            "name": "close_nocancel",
+            "number": 399
+        }
+    },
+    "clock_settime": {
+        "linux": {
+            "number": 227,
+            "name": "clock_settime",
+            "desc": "clock and time functions"
+        }
+    },
+    "select": {
+        "darwin": {
+            "number": 93,
+            "name": "select",
+            "desc": "synchronous I/O multiplexing"
+        },
+        "linux": {
+            "number": 23,
+            "name": "select",
+            "desc": "synchronous I/O"
+        }
+    },
+    "getsockopt": {
+        "darwin": {
+            "number": 118,
+            "name": "getsockopt",
+            "desc": "get and set options on sockets"
+        },
+        "linux": {
+            "number": 542,
+            "name": "getsockopt",
+            "desc": "get and set options on sockets"
+        }
+    },
+    "getpriority": {
+        "darwin": {
+            "number": 100,
+            "name": "getpriority",
+            "desc": "get/set program scheduling priority"
+        },
+        "linux": {
+            "number": 140,
+            "name": "getpriority",
+            "desc": "get/set program scheduling priority"
+        }
+    },
+    "aio_write": {
+        "darwin": {
+            "number": 319,
+            "name": "aio_write",
+            "desc": "asynchronous write to a file (REALTIME)"
+        }
+    },
+    "fdatasync": {
+        "darwin": {
+            "name": "fdatasync",
+            "number": 187
+        },
+        "linux": {
+            "number": 75,
+            "name": "fdatasync",
+            "desc": "synchronize a file's in-core state with storage"
+        }
+    },
+    "setns": {
+        "linux": {
+            "number": 308,
+            "name": "setns",
+            "desc": "reassociate thread with a namespace"
+        }
+    },
+    "guarded_writev_np": {
+        "darwin": {
+            "name": "guarded_writev_np",
+            "number": 487
+        }
+    },
+    "bsdthread_create": {
+        "darwin": {
+            "name": "bsdthread_create",
+            "number": 360
+        }
+    },
+    "accept4": {
+        "linux": {
+            "number": 288,
+            "name": "accept4",
+            "desc": "accept a connection on a socket"
+        }
+    },
+    "__pthread_kill": {
+        "darwin": {
+            "name": "__pthread_kill",
+            "number": 328
+        }
+    },
+    "pathconf": {
+        "darwin": {
+            "number": 191,
+            "name": "pathconf",
+            "desc": "get configurable pathname variables"
+        }
+    },
+    "sched_getscheduler": {
+        "linux": {
+            "number": 145,
+            "name": "sched_getscheduler",
+            "desc": "set and get scheduling pol\u2010"
+        }
+    },
+    "stat_extended": {
+        "darwin": {
+            "name": "stat_extended",
+            "number": 279
+        }
+    },
+    "gettimeofday": {
+        "darwin": {
+            "number": 116,
+            "name": "gettimeofday",
+            "desc": "get/set date and time"
+        },
+        "linux": {
+            "number": 96,
+            "name": "gettimeofday",
+            "desc": "get / set time"
+        }
+    },
+    "lstat64_extended": {
+        "darwin": {
+            "name": "lstat64_extended",
+            "number": 342
+        }
+    },
+    "sem_open": {
+        "darwin": {
+            "number": 268,
+            "name": "sem_open",
+            "desc": "initialize and open a named semaphore"
+        }
+    },
+    "socket": {
+        "darwin": {
+            "number": 97,
+            "name": "socket",
+            "desc": "create an endpoint for communication"
+        },
+        "linux": {
+            "number": 41,
+            "name": "socket",
+            "desc": "create an endpoint for communication"
+        }
+    },
+    "chdir": {
+        "darwin": {
+            "number": 12,
+            "name": "chdir",
+            "desc": "change current working directory"
+        },
+        "linux": {
+            "number": 80,
+            "name": "chdir",
+            "desc": "change working directory"
+        }
+    },
+    "inotify_init1": {
+        "linux": {
+            "number": 294,
+            "name": "inotify_init1",
+            "desc": "initialize an inotify instance"
+        }
+    },
+    "sched_getattr": {
+        "linux": {
+            "number": 315,
+            "name": "sched_getattr",
+            "desc": "set  and  get scheduling policy and"
+        }
+    },
+    "coalition": {
+        "darwin": {
+            "name": "coalition",
+            "number": 458
+        }
+    },
+    "setuid": {
+        "darwin": {
+            "number": 23,
+            "name": "setuid",
+            "desc": "set user and group ID"
+        },
+        "linux": {
+            "number": 105,
+            "name": "setuid",
+            "desc": "set user identity"
+        }
+    },
+    "utimensat": {
+        "linux": {
+            "number": 280,
+            "name": "utimensat",
+            "desc": "change file timestamps with nanosecond preci\u2010"
+        }
+    },
+    "sfi_pidctl": {
+        "darwin": {
+            "name": "sfi_pidctl",
+            "number": 457
+        }
+    },
+    "ftruncate": {
+        "darwin": {
+            "number": 201,
+            "name": "ftruncate",
+            "desc": "truncate or extend a file to a specified length"
+        },
+        "linux": {
+            "number": 77,
+            "name": "ftruncate",
+            "desc": "truncate a file to a specified length"
+        }
+    },
+    "vfork": {
+        "darwin": {
+            "number": 66,
+            "name": "vfork",
+            "desc": "spawn new process in a virtual memory efficient way"
+        },
+        "linux": {
+            "number": 58,
+            "name": "vfork",
+            "desc": "create a child process and block parent"
+        }
+    },
+    "io_setup": {
+        "linux": {
+            "number": 543,
+            "name": "io_setup",
+            "desc": "create an asynchronous I/O context"
+        }
+    },
+    "mprotect": {
+        "darwin": {
+            "number": 74,
+            "name": "mprotect",
+            "desc": "control the protection of pages"
+        },
+        "linux": {
+            "number": 10,
+            "name": "mprotect",
+            "desc": "set protection on a region of memory"
+        }
+    },
+    "sem_trywait": {
+        "darwin": {
+            "number": 272,
+            "name": "sem_trywait",
+            "desc": "lock a semaphore"
+        }
+    },
+    "accept": {
+        "darwin": {
+            "number": 30,
+            "name": "accept",
+            "desc": "accept a connection on a socket"
+        },
+        "linux": {
+            "number": 43,
+            "name": "accept",
+            "desc": "accept a connection on a socket"
+        }
+    },
+    "io_destroy": {
+        "linux": {
+            "number": 207,
+            "name": "io_destroy",
+            "desc": "destroy an asynchronous I/O context"
+        }
+    },
+    "timerfd_create": {
+        "linux": {
+            "number": 283,
+            "name": "timerfd_create",
+            "desc": "timers that notify"
+        }
+    },
+    "chroot": {
+        "darwin": {
+            "number": 61,
+            "name": "chroot",
+            "desc": "change root directory"
+        },
+        "linux": {
+            "number": 161,
+            "name": "chroot",
+            "desc": "change root directory"
+        }
+    },
+    "open_dprotected_np": {
+        "darwin": {
+            "name": "open_dprotected_np",
+            "number": 216
+        }
+    },
+    "getgroups": {
+        "darwin": {
+            "number": 79,
+            "name": "getgroups",
+            "desc": "get group access list"
+        },
+        "linux": {
+            "number": 115,
+            "name": "getgroups",
+            "desc": "get/set list of supplementary group IDs"
+        }
+    },
+    "ledger": {
+        "darwin": {
+            "name": "ledger",
+            "number": 373
+        }
+    },
+    "writev_nocancel": {
+        "darwin": {
+            "name": "writev_nocancel",
+            "number": 412
+        }
+    },
+    "fhopen": {
+        "darwin": {
+            "number": 248,
+            "name": "fhopen",
+            "desc": "open a file by file handle"
+        }
+    },
+    "stack_snapshot": {
+        "darwin": {
+            "name": "stack_snapshot",
+            "number": 365
+        }
+    },
+    "__mac_get_link": {
+        "darwin": {
+            "name": "__mac_get_link",
+            "number": 384
+        }
+    },
+    "openat": {
+        "darwin": {
+            "name": "openat",
+            "number": 463
+        },
+        "linux": {
+            "number": 257,
+            "name": "openat",
+            "desc": "open and possibly create a file"
+        }
+    },
+    "clone": {
+        "linux": {
+            "number": 56,
+            "name": "clone",
+            "desc": "create a child process"
+        }
+    },
+    "getxattr": {
+        "darwin": {
+            "number": 234,
+            "name": "getxattr",
+            "desc": "get an extended attribute value"
+        },
+        "linux": {
+            "number": 191,
+            "name": "getxattr",
+            "desc": "retrieve an extended attribute value"
+        }
+    },
+    "getdirentries64": {
+        "darwin": {
+            "name": "getdirentries64",
+            "number": 344
+        }
+    },
+    "ioctl": {
+        "darwin": {
+            "number": 54,
+            "name": "ioctl",
+            "desc": "control device"
+        },
+        "linux": {
+            "number": 514,
+            "name": "ioctl",
+            "desc": "control device"
+        }
+    },
+    "kcmp": {
+        "linux": {
+            "number": 312,
+            "name": "kcmp",
+            "desc": "compare  two  processes  to determine if they share a kernel"
+        }
+    },
+    "setgroups": {
+        "darwin": {
+            "number": 80,
+            "name": "setgroups",
+            "desc": "set group access list"
+        },
+        "linux": {
+            "number": 116,
+            "name": "setgroups",
+            "desc": "get/set list of supplementary group IDs"
+        }
+    },
+    "unlink": {
+        "darwin": {
+            "number": 10,
+            "name": "unlink",
+            "desc": "remove directory entry"
+        },
+        "linux": {
+            "number": 87,
+            "name": "unlink",
+            "desc": "delete a name and possibly the file it refers to"
+        }
+    },
+    "searchfs": {
+        "darwin": {
+            "number": 225,
+            "name": "searchfs",
+            "desc": "search a volume quickly"
+        }
+    },
+    "audit_session_self": {
+        "darwin": {
+            "name": "audit_session_self",
+            "number": 428
+        }
+    },
+    "mkfifo_extended": {
+        "darwin": {
+            "name": "mkfifo_extended",
+            "number": 291
+        }
+    },
+    "bind": {
+        "darwin": {
+            "number": 104,
+            "name": "bind",
+            "desc": "bind a name to a socket"
+        },
+        "linux": {
+            "number": 49,
+            "name": "bind",
+            "desc": "bind a name to a socket"
+        }
+    },
+    "recvmmsg": {
+        "linux": {
+            "number": 537,
+            "name": "recvmmsg",
+            "desc": "receive multiple messages on a socket"
+        }
+    },
+    "shm_open": {
+        "darwin": {
+            "number": 266,
+            "name": "shm_open",
+            "desc": "open a shared memory object"
+        }
+    },
+    "pwrite_nocancel": {
+        "darwin": {
+            "name": "pwrite_nocancel",
+            "number": 415
+        }
+    },
+    "ppoll": {
+        "linux": {
+            "number": 271,
+            "name": "ppoll",
+            "desc": "wait for some event on a file descriptor"
+        }
+    },
+    "syncfs": {
+        "linux": {
+            "number": 306,
+            "name": "syncfs",
+            "desc": "commit filesystem caches to disk"
+        }
+    },
+    "sysctl": {
+        "darwin": {
+            "number": 202,
+            "name": "sysctl",
+            "desc": "get or set system information"
+        }
+    },
+    "msgrcv": {
+        "darwin": {
+            "name": "msgrcv",
+            "number": 261
+        },
+        "linux": {
+            "number": 70,
+            "name": "msgrcv",
+            "desc": "System V message queue operations"
+        }
+    },
+    "uname": {
+        "linux": {
+            "number": 63,
+            "name": "uname",
+            "desc": "get name and information about current kernel"
+        }
+    },
+    "swapoff": {
+        "linux": {
+            "number": 168,
+            "name": "swapoff",
+            "desc": "start/stop swapping to file/device"
+        }
+    },
+    "sem_unlink": {
+        "darwin": {
+            "number": 270,
+            "name": "sem_unlink",
+            "desc": "remove a named semaphore"
+        }
+    },
+    "readahead": {
+        "linux": {
+            "number": 187,
+            "name": "readahead",
+            "desc": "initiate file readahead into page cache"
+        }
+    },
+    "stat64_extended": {
+        "darwin": {
+            "name": "stat64_extended",
+            "number": 341
+        }
+    },
+    "write": {
+        "darwin": {
+            "number": 4,
+            "name": "write",
+            "desc": "write output"
+        },
+        "linux": {
+            "number": 1,
+            "name": "write",
+            "desc": "write to a file descriptor"
+        }
+    },
+    "getpid": {
+        "darwin": {
+            "number": 20,
+            "name": "getpid",
+            "desc": "get parent or calling process identification"
+        },
+        "linux": {
+            "number": 39,
+            "name": "getpid",
+            "desc": "get process identification"
+        }
+    },
+    "setgid": {
+        "darwin": {
+            "number": 181,
+            "name": "setgid",
+            "desc": "set user and group ID"
+        },
+        "linux": {
+            "number": 106,
+            "name": "setgid",
+            "desc": "set group identity"
+        }
+    },
+    "pivot_root": {
+        "linux": {
+            "number": 155,
+            "name": "pivot_root",
+            "desc": "change the root filesystem"
+        }
+    },
+    "modify_ldt": {
+        "linux": {
+            "number": 154,
+            "name": "modify_ldt",
+            "desc": "get or set a per-process LDT entry"
+        }
+    },
+    "gettid": {
+        "darwin": {
+            "name": "gettid",
+            "number": 286
+        },
+        "linux": {
+            "number": 186,
+            "name": "gettid",
+            "desc": "get thread identification"
+        }
+    },
+    "sched_get_priority_min": {
+        "linux": {
+            "number": 147,
+            "name": "sched_get_priority_min",
+            "desc": "get static priority"
+        }
+    },
+    "fchown": {
+        "darwin": {
+            "number": 123,
+            "name": "fchown",
+            "desc": "change owner and group of a file"
+        },
+        "linux": {
+            "number": 93,
+            "name": "fchown",
+            "desc": "change ownership of a file"
+        }
+    },
+    "openbyid_np": {
+        "darwin": {
+            "name": "openbyid_np",
+            "number": 479
+        }
+    },
+    "__mac_set_link": {
+        "darwin": {
+            "name": "__mac_set_link",
+            "number": 385
+        }
+    },
+    "__mac_get_pid": {
+        "darwin": {
+            "name": "__mac_get_pid",
+            "number": 390
+        }
+    },
+    "membarrier": {
+        "linux": {
+            "number": 324,
+            "name": "membarrier",
+            "desc": "issue memory barriers on a set of threads"
+        }
+    },
+    "setfsgid": {
+        "linux": {
+            "number": 123,
+            "name": "setfsgid",
+            "desc": "set group identity used for filesystem checks"
+        }
+    },
+    "setreuid": {
+        "darwin": {
+            "number": 126,
+            "name": "setreuid",
+            "desc": "set real and effective user IDs"
+        },
+        "linux": {
+            "number": 113,
+            "name": "setreuid",
+            "desc": "set real and/or effective user or group ID"
+        }
+    },
+    "change_fdguard_np": {
+        "darwin": {
+            "name": "change_fdguard_np",
+            "number": 444
+        }
+    },
+    "semtimedop": {
+        "linux": {
+            "number": 220,
+            "name": "semtimedop",
+            "desc": "System V semaphore operations"
+        }
+    },
+    "eventfd2": {
+        "linux": {
+            "number": 290,
+            "name": "eventfd2",
+            "desc": "create a file descriptor for event notification"
+        }
+    },
+    "getpgid": {
+        "darwin": {
+            "number": 151,
+            "name": "getpgid",
+            "desc": "get process group"
+        },
+        "linux": {
+            "number": 121,
+            "name": "getpgid",
+            "desc": "set/get process group"
+        }
+    },
+    "coalition_info": {
+        "darwin": {
+            "name": "coalition_info",
+            "number": 459
+        }
+    },
+    "sendto": {
+        "darwin": {
+            "number": 133,
+            "name": "sendto",
+            "desc": "send a message from a socket"
+        },
+        "linux": {
+            "number": 44,
+            "name": "sendto",
+            "desc": "send a message on a socket"
+        }
+    },
+    "wait4_nocancel": {
+        "darwin": {
+            "name": "wait4_nocancel",
+            "number": 400
+        }
+    },
+    "kevent": {
+        "darwin": {
+            "number": 363,
+            "name": "kevent",
+            "desc": "kernel event notification mechanism"
+        }
+    },
+    "lgetxattr": {
+        "linux": {
+            "number": 192,
+            "name": "lgetxattr",
+            "desc": "retrieve an extended attribute value"
+        }
+    },
+    "clock_gettime": {
+        "linux": {
+            "number": 228,
+            "name": "clock_gettime",
+            "desc": "clock and time functions"
+        }
+    },
+    "getfsstat": {
+        "darwin": {
+            "number": 18,
+            "name": "getfsstat",
+            "desc": "get list of all mounted file systems"
+        }
+    },
+    "mkfifo": {
+        "darwin": {
+            "number": 132,
+            "name": "mkfifo",
+            "desc": "make a fifo file"
+        }
+    },
+    "vfs_purge": {
+        "darwin": {
+            "name": "vfs_purge",
+            "number": 455
+        }
+    },
+    "semctl": {
+        "darwin": {
+            "number": 254,
+            "name": "semctl",
+            "desc": "control operations on a semaphore set"
+        },
+        "linux": {
+            "number": 66,
+            "name": "semctl",
+            "desc": "System V semaphore control operations"
+        }
+    },
+    "connect": {
+        "darwin": {
+            "number": 98,
+            "name": "connect",
+            "desc": "initiate a connection on a socket"
+        },
+        "linux": {
+            "number": 42,
+            "name": "connect",
+            "desc": "initiate a connection on a socket"
+        }
+    },
+    "accept_nocancel": {
+        "darwin": {
+            "name": "accept_nocancel",
+            "number": 404
+        }
+    },
+    "flock": {
+        "darwin": {
+            "number": 131,
+            "name": "flock",
+            "desc": "apply or remove an advisory lock on an open file"
+        },
+        "linux": {
+            "number": 73,
+            "name": "flock",
+            "desc": "apply or remove an advisory lock on an open file"
+        }
+    },
+    "aio_error": {
+        "darwin": {
+            "number": 317,
+            "name": "aio_error",
+            "desc": "retrieve error status of asynchronous I/O operation (REALTIME)"
+        }
+    },
+    "shmget": {
+        "darwin": {
+            "number": 265,
+            "name": "shmget",
+            "desc": "get shared memory area identifier"
+        },
+        "linux": {
+            "number": 29,
+            "name": "shmget",
+            "desc": "allocates a System V shared memory segment"
+        }
+    },
+    "add_key": {
+        "linux": {
+            "number": 248,
+            "name": "add_key",
+            "desc": "add a key to the kernel's key management facility"
+        }
+    },
+    "__mac_get_fd": {
+        "darwin": {
+            "name": "__mac_get_fd",
+            "number": 388
+        }
+    },
+    "chflags": {
+        "darwin": {
+            "number": 34,
+            "name": "chflags",
+            "desc": "set file flags"
+        }
+    },
+    "sysfs": {
+        "linux": {
+            "number": 139,
+            "name": "sysfs",
+            "desc": "get filesystem type information"
+        }
+    },
+    "reboot": {
+        "darwin": {
+            "number": 55,
+            "name": "reboot",
+            "desc": "reboot system or halt processor"
+        },
+        "linux": {
+            "number": 169,
+            "name": "reboot",
+            "desc": "reboot or enable/disable Ctrl-Alt-Del"
+        }
+    },
+    "__mac_get_file": {
+        "darwin": {
+            "name": "__mac_get_file",
+            "number": 382
+        }
+    },
+    "setsid": {
+        "darwin": {
+            "number": 147,
+            "name": "setsid",
+            "desc": "create session and set process group ID"
+        },
+        "linux": {
+            "number": 112,
+            "name": "setsid",
+            "desc": "creates a session and sets the process group ID"
+        }
+    },
+    "kexec_load": {
+        "linux": {
+            "number": 528,
+            "name": "kexec_load",
+            "desc": "load a new kernel for later execution"
+        }
+    },
+    "set_tid_address": {
+        "linux": {
+            "number": 218,
+            "name": "set_tid_address",
+            "desc": "set pointer to thread ID"
+        }
+    },
+    "_sysctl": {
+        "linux": {
+            "number": 156,
+            "name": "_sysctl",
+            "desc": "read/write system parameters"
+        }
+    },
+    "proc_uuid_policy": {
+        "darwin": {
+            "name": "proc_uuid_policy",
+            "number": 452
+        }
+    },
+    "__pthread_markcancel": {
+        "darwin": {
+            "name": "__pthread_markcancel",
+            "number": 332
+        }
+    },
+    "keyctl": {
+        "linux": {
+            "number": 250,
+            "name": "keyctl",
+            "desc": "manipulate the kernel's key management facility"
+        }
+    },
+    "getcwd": {
+        "linux": {
+            "number": 79,
+            "name": "getcwd",
+            "desc": "get current working directory"
+        }
+    },
+    "modwatch": {
+        "darwin": {
+            "name": "modwatch",
+            "number": 233
+        }
+    },
+    "getpeername": {
+        "darwin": {
+            "number": 31,
+            "name": "getpeername",
+            "desc": "get address of connected peer"
+        },
+        "linux": {
+            "number": 52,
+            "name": "getpeername",
+            "desc": "get name of connected peer socket"
+        }
+    },
+    "sigreturn": {
+        "darwin": {
+            "name": "sigreturn",
+            "number": 184
+        }
+    },
+    "mknodat": {
+        "linux": {
+            "number": 259,
+            "name": "mknodat",
+            "desc": "create a special or ordinary file"
+        }
+    },
+    "kexec_file_load": {
+        "linux": {
+            "number": 320,
+            "name": "kexec_file_load",
+            "desc": "load a new kernel for later execution"
+        }
+    },
+    "times": {
+        "linux": {
+            "number": 100,
+            "name": "times",
+            "desc": "get process times"
+        }
+    },
+    "pwrite64": {
+        "linux": {
+            "number": 18,
+            "name": "pwrite64",
+            "desc": "read from or write to a file descriptor at a given"
+        }
+    },
+    "copyfile": {
+        "darwin": {
+            "number": 227,
+            "name": "copyfile",
+            "desc": "copy a file"
+        }
+    },
+    "setsgroups": {
+        "darwin": {
+            "name": "setsgroups",
+            "number": 287
+        }
+    },
+    "psynch_cvwait": {
+        "darwin": {
+            "name": "psynch_cvwait",
+            "number": 305
+        }
+    },
+    "rt_tgsigqueueinfo": {
+        "linux": {
+            "number": 536,
+            "name": "rt_tgsigqueueinfo",
+            "desc": "queue a signal and data"
+        }
+    },
+    "rt_sigaction": {
+        "linux": {
+            "number": 512,
+            "name": "rt_sigaction",
+            "desc": "examine and change a signal action"
+        }
+    },
+    "sem_post": {
+        "darwin": {
+            "number": 273,
+            "name": "sem_post",
+            "desc": "unlock a semaphore"
+        }
+    },
+    "proc_info": {
+        "darwin": {
+            "name": "proc_info",
+            "number": 336
+        }
+    },
+    "mq_getsetattr": {
+        "linux": {
+            "number": 245,
+            "name": "mq_getsetattr",
+            "desc": "get/set message queue attributes"
+        }
+    },
+    "request_key": {
+        "linux": {
+            "number": 249,
+            "name": "request_key",
+            "desc": "request a key from the kernel's key management facility"
+        }
+    },
+    "fsetxattr": {
+        "darwin": {
+            "number": 237,
+            "name": "fsetxattr",
+            "desc": "set an extended attribute value"
+        },
+        "linux": {
+            "number": 190,
+            "name": "fsetxattr",
+            "desc": "set an extended attribute value"
+        }
+    },
+    "acct": {
+        "darwin": {
+            "number": 51,
+            "name": "acct",
+            "desc": "enable or disable process accounting"
+        },
+        "linux": {
+            "number": 163,
+            "name": "acct",
+            "desc": "switch process accounting on or off"
+        }
+    },
+    "open": {
+        "darwin": {
+            "number": 5,
+            "name": "open",
+            "desc": "open or create a file for reading or writing"
+        },
+        "linux": {
+            "number": 2,
+            "name": "open",
+            "desc": "open and possibly create a file"
+        }
+    },
+    "sendmsg_nocancel": {
+        "darwin": {
+            "name": "sendmsg_nocancel",
+            "number": 402
+        }
+    },
+    "psynch_cvsignal": {
+        "darwin": {
+            "name": "psynch_cvsignal",
+            "number": 304
+        }
+    },
+    "clock_nanosleep": {
+        "linux": {
+            "number": 230,
+            "name": "clock_nanosleep",
+            "desc": "high-resolution sleep with specifiable clock"
+        }
+    },
+    "exit_group": {
+        "linux": {
+            "number": 231,
+            "name": "exit_group",
+            "desc": "exit all threads in a process"
+        }
+    },
+    "listxattr": {
+        "darwin": {
+            "number": 240,
+            "name": "listxattr",
+            "desc": "list extended attribute names"
+        },
+        "linux": {
+            "number": 194,
+            "name": "listxattr",
+            "desc": "list extended attribute names"
+        }
+    },
+    "mkdir": {
+        "darwin": {
+            "number": 136,
+            "name": "mkdir",
+            "desc": "make a directory file"
+        },
+        "linux": {
+            "number": 83,
+            "name": "mkdir",
+            "desc": "create a directory"
+        }
+    },
+    "sigpending": {
+        "darwin": {
+            "number": 52,
+            "name": "sigpending",
+            "desc": "get pending signals"
+        }
+    },
+    "faccessat": {
+        "darwin": {
+            "name": "faccessat",
+            "number": 466
+        },
+        "linux": {
+            "number": 269,
+            "name": "faccessat",
+            "desc": "check user's permissions for a file"
+        }
+    },
+    "unlinkat": {
+        "darwin": {
+            "name": "unlinkat",
+            "number": 472
+        },
+        "linux": {
+            "number": 263,
+            "name": "unlinkat",
+            "desc": "delete a name and possibly the file it refers to"
+        }
+    },
+    "userfaultfd": {
+        "linux": {
+            "name": "userfaultfd",
+            "number": 323
+        }
+    },
+    "psynch_rw_upgrade": {
+        "darwin": {
+            "name": "psynch_rw_upgrade",
+            "number": 300
+        }
+    },
+    "settid": {
+        "darwin": {
+            "name": "settid",
+            "number": 285
+        }
+    },
+    "listen": {
+        "darwin": {
+            "number": 106,
+            "name": "listen",
+            "desc": "listen for connections on a socket"
+        },
+        "linux": {
+            "number": 50,
+            "name": "listen",
+            "desc": "listen for connections on a socket"
+        }
+    },
+    "readv_nocancel": {
+        "darwin": {
+            "name": "readv_nocancel",
+            "number": 411
+        }
+    },
+    "move_pages": {
+        "linux": {
+            "number": 533,
+            "name": "move_pages",
+            "desc": "move individual pages of a process to another node"
+        }
+    },
+    "__mac_get_proc": {
+        "darwin": {
+            "name": "__mac_get_proc",
+            "number": 386
+        }
+    },
+    "write_nocancel": {
+        "darwin": {
+            "name": "write_nocancel",
+            "number": 397
+        }
+    },
+    "tee": {
+        "linux": {
+            "number": 276,
+            "name": "tee",
+            "desc": "duplicating pipe content"
+        }
+    },
+    "fgetxattr": {
+        "darwin": {
+            "number": 235,
+            "name": "fgetxattr",
+            "desc": "get an extended attribute value"
+        },
+        "linux": {
+            "number": 193,
+            "name": "fgetxattr",
+            "desc": "retrieve an extended attribute value"
+        }
+    },
+    "pwrite": {
+        "darwin": {
+            "number": 154,
+            "name": "pwrite",
+            "desc": "write output"
+        }
+    },
+    "mlock": {
+        "darwin": {
+            "number": 203,
+            "name": "mlock",
+            "desc": "lock (unlock) physical pages in memory"
+        },
+        "linux": {
+            "number": 149,
+            "name": "mlock",
+            "desc": "lock and unlock memory"
+        }
+    },
+    "recvfrom_nocancel": {
+        "darwin": {
+            "name": "recvfrom_nocancel",
+            "number": 403
+        }
+    },
+    "swapon": {
+        "darwin": {
+            "name": "swapon",
+            "number": 85
+        },
+        "linux": {
+            "number": 167,
+            "name": "swapon",
+            "desc": "start/stop swapping to file/device"
+        }
+    },
+    "statfs": {
+        "darwin": {
+            "number": 157,
+            "name": "statfs",
+            "desc": "get file system statistics"
+        },
+        "linux": {
+            "number": 137,
+            "name": "statfs",
+            "desc": "get filesystem statistics"
+        }
+    },
+    "psynch_rw_wrlock": {
+        "darwin": {
+            "name": "psynch_rw_wrlock",
+            "number": 307
+        }
+    },
+    "rt_sigqueueinfo": {
+        "linux": {
+            "number": 524,
+            "name": "rt_sigqueueinfo",
+            "desc": "queue a signal and data"
+        }
+    },
+    "process_vm_writev": {
+        "linux": {
+            "number": 540,
+            "name": "process_vm_writev",
+            "desc": "transfer data between process"
+        }
+    },
+    "setitimer": {
+        "darwin": {
+            "number": 83,
+            "name": "setitimer",
+            "desc": "get/set value of interval timer"
+        },
+        "linux": {
+            "number": 38,
+            "name": "setitimer",
+            "desc": "get or set value of an interval timer"
+        }
+    },
+    "audit_session_join": {
+        "darwin": {
+            "name": "audit_session_join",
+            "number": 429
+        }
+    },
+    "getdents64": {
+        "linux": {
+            "number": 217,
+            "name": "getdents64",
+            "desc": "get directory entries"
+        }
+    },
+    "mremap": {
+        "linux": {
+            "number": 25,
+            "name": "mremap",
+            "desc": "remap a virtual memory address"
+        }
+    },
+    "getattrlistbulk": {
+        "darwin": {
+            "name": "getattrlistbulk",
+            "number": 461
+        }
+    },
+    "fanotify_mark": {
+        "linux": {
+            "number": 301,
+            "name": "fanotify_mark",
+            "desc": "add, remove, or modify an fanotify mark on a filesys\u2010"
+        }
+    },
+    "rename_ext": {
+        "darwin": {
+            "name": "rename_ext",
+            "number": 488
+        }
+    },
+    "pid_suspend": {
+        "darwin": {
+            "name": "pid_suspend",
+            "number": 433
+        }
+    },
+    "rt_sigreturn": {
+        "linux": {
+            "number": 513,
+            "name": "rt_sigreturn",
+            "desc": "return  from  signal handler and cleanup"
+        }
+    },
+    "getrlimit": {
+        "darwin": {
+            "number": 194,
+            "name": "getrlimit",
+            "desc": "control maximum system resource consumption"
+        },
+        "linux": {
+            "number": 97,
+            "name": "getrlimit",
+            "desc": "get/set resource limits"
+        }
+    },
+    "setattrlist": {
+        "darwin": {
+            "number": 221,
+            "name": "setattrlist",
+            "desc": "set file system attributes"
+        }
+    },
+    "timer_getoverrun": {
+        "linux": {
+            "number": 225,
+            "name": "timer_getoverrun",
+            "desc": "get overrun count for a POSIX per-process timer"
+        }
+    },
+    "sem_wait_nocancel": {
+        "darwin": {
+            "name": "sem_wait_nocancel",
+            "number": 420
+        }
+    },
+    "psynch_cvbroad": {
+        "darwin": {
+            "name": "psynch_cvbroad",
+            "number": 303
+        }
+    },
+    "waitid": {
+        "darwin": {
+            "name": "waitid",
+            "number": 173
+        },
+        "linux": {
+            "number": 529,
+            "name": "waitid",
+            "desc": "wait for process to change state"
+        }
+    },
+    "fsetattrlist": {
+        "darwin": {
+            "number": 229,
+            "name": "fsetattrlist",
+            "desc": "set file system attributes"
+        }
+    },
+    "mlockall": {
+        "darwin": {
+            "name": "mlockall",
+            "number": 324
+        },
+        "linux": {
+            "number": 151,
+            "name": "mlockall",
+            "desc": "lock and unlock memory"
+        }
+    },
+    "psynch_rw_rdlock": {
+        "darwin": {
+            "name": "psynch_rw_rdlock",
+            "number": 306
+        }
+    },
+    "alarm": {
+        "linux": {
+            "number": 37,
+            "name": "alarm",
+            "desc": "set an alarm clock for delivery of a signal"
+        }
+    },
+    "futex": {
+        "linux": {
+            "number": 202,
+            "name": "futex",
+            "desc": "fast user-space locking"
+        }
+    },
+    "pipe": {
+        "darwin": {
+            "number": 42,
+            "name": "pipe",
+            "desc": "create descriptor pair for interprocess communication"
+        },
+        "linux": {
+            "number": 22,
+            "name": "pipe",
+            "desc": "create pipe"
+        }
+    },
+    "utimes": {
+        "darwin": {
+            "number": 138,
+            "name": "utimes",
+            "desc": "set file access and modification times"
+        },
+        "linux": {
+            "number": 235,
+            "name": "utimes",
+            "desc": "change file last access and modification times"
+        }
+    },
+    "getwgroups": {
+        "darwin": {
+            "name": "getwgroups",
+            "number": 290
+        }
+    },
+    "sem_wait": {
+        "darwin": {
+            "number": 271,
+            "name": "sem_wait",
+            "desc": "lock a semaphore"
+        }
+    },
+    "psynch_mutexdrop": {
+        "darwin": {
+            "name": "psynch_mutexdrop",
+            "number": 302
+        }
+    },
+    "iopl": {
+        "linux": {
+            "number": 172,
+            "name": "iopl",
+            "desc": "change I/O privilege level"
+        }
+    },
+    "mq_timedreceive": {
+        "linux": {
+            "number": 243,
+            "name": "mq_timedreceive",
+            "desc": "receive a message from a message queue"
+        }
+    },
+    "fsctl": {
+        "darwin": {
+            "name": "fsctl",
+            "number": 242
+        }
+    },
+    "msgrcv_nocancel": {
+        "darwin": {
+            "name": "msgrcv_nocancel",
+            "number": 419
+        }
+    },
+    "fcntl_nocancel": {
+        "darwin": {
+            "name": "fcntl_nocancel",
+            "number": 406
+        }
+    },
+    "bsdthread_register": {
+        "darwin": {
+            "name": "bsdthread_register",
+            "number": 366
+        }
+    },
+    "access": {
+        "darwin": {
+            "number": 33,
+            "name": "access",
+            "desc": "check access permissions of a file or pathname"
+        },
+        "linux": {
+            "number": 21,
+            "name": "access",
+            "desc": "check user's permissions for a file"
+        }
+    },
+    "pause": {
+        "linux": {
+            "number": 34,
+            "name": "pause",
+            "desc": "wait for signal"
+        }
+    },
+    "epoll_create": {
+        "linux": {
+            "number": 213,
+            "name": "epoll_create",
+            "desc": "open an epoll file descriptor"
+        }
+    },
+    "getdents": {
+        "linux": {
+            "number": 78,
+            "name": "getdents",
+            "desc": "get directory entries"
+        }
+    },
+    "system_override": {
+        "darwin": {
+            "name": "system_override",
+            "number": 454
+        }
+    },
+    "getsgroups": {
+        "darwin": {
+            "name": "getsgroups",
+            "number": 288
+        }
+    },
+    "arch_prctl": {
+        "linux": {
+            "number": 158,
+            "name": "arch_prctl",
+            "desc": "set architecture-specific thread state"
+        }
+    },
+    "writev": {
+        "darwin": {
+            "number": 121,
+            "name": "writev",
+            "desc": "write output"
+        },
+        "linux": {
+            "number": 516,
+            "name": "writev",
+            "desc": "read or write data into multiple"
+        }
+    },
+    "fchmod": {
+        "darwin": {
+            "number": 124,
+            "name": "fchmod",
+            "desc": "change mode of file"
+        },
+        "linux": {
+            "number": 91,
+            "name": "fchmod",
+            "desc": "change permissions of a file"
+        }
+    },
+    "peeloff": {
+        "darwin": {
+            "name": "peeloff",
+            "number": 449
+        }
+    },
+    "bsdthread_ctl": {
+        "darwin": {
+            "name": "bsdthread_ctl",
+            "number": 478
+        }
+    },
+    "__mac_mount": {
+        "darwin": {
+            "name": "__mac_mount",
+            "number": 424
+        }
+    },
+    "epoll_wait": {
+        "linux": {
+            "number": 232,
+            "name": "epoll_wait",
+            "desc": "wait for an I/O event on an epoll file"
+        }
+    },
+    "fstat": {
+        "darwin": {
+            "number": 189,
+            "name": "fstat",
+            "desc": "get file status"
+        },
+        "linux": {
+            "number": 5,
+            "name": "fstat",
+            "desc": "get file status"
+        }
+    },
+    "capset": {
+        "linux": {
+            "number": 126,
+            "name": "capset",
+            "desc": "set/get capabilities of thread(s)"
+        }
+    },
+    "personality": {
+        "linux": {
+            "number": 135,
+            "name": "personality",
+            "desc": "set the process execution domain"
+        }
+    },
+    "dup3": {
+        "linux": {
+            "number": 292,
+            "name": "dup3",
+            "desc": "duplicate a file descriptor"
+        }
+    },
+    "dup2": {
+        "darwin": {
+            "number": 90,
+            "name": "dup2",
+            "desc": "duplicate an existing file descriptor"
+        },
+        "linux": {
+            "number": 33,
+            "name": "dup2",
+            "desc": "duplicate a file descriptor"
+        }
+    },
+    "psynch_rw_unlock": {
+        "darwin": {
+            "name": "psynch_rw_unlock",
+            "number": 308
+        }
+    },
+    "getpgrp": {
+        "darwin": {
+            "number": 81,
+            "name": "getpgrp",
+            "desc": "get process group"
+        },
+        "linux": {
+            "number": 111,
+            "name": "getpgrp",
+            "desc": "set/get process group"
+        }
+    },
+    "semop": {
+        "darwin": {
+            "number": 256,
+            "name": "semop",
+            "desc": "atomic array of operations on a semaphore set"
+        },
+        "linux": {
+            "number": 65,
+            "name": "semop",
+            "desc": "System V semaphore operations"
+        }
+    },
+    "readlinkat": {
+        "darwin": {
+            "name": "readlinkat",
+            "number": 473
+        },
+        "linux": {
+            "number": 267,
+            "name": "readlinkat",
+            "desc": "read value of a symbolic link"
+        }
+    },
+    "__mac_execve": {
+        "darwin": {
+            "name": "__mac_execve",
+            "number": 380
+        }
+    },
+    "poll_nocancel": {
+        "darwin": {
+            "name": "poll_nocancel",
+            "number": 417
+        }
+    },
+    "__pthread_fchdir": {
+        "darwin": {
+            "name": "__pthread_fchdir",
+            "number": 349
+        }
+    },
+    "renameat2": {
+        "linux": {
+            "number": 316,
+            "name": "renameat2",
+            "desc": "change the name or location of a file"
+        }
+    },
+    "__mac_get_lctx": {
+        "darwin": {
+            "name": "__mac_get_lctx",
+            "number": 392
+        }
+    },
+    "fstat64": {
+        "darwin": {
+            "number": 339,
+            "name": "fstat64",
+            "desc": "get file status"
+        }
+    },
+    "kill": {
+        "darwin": {
+            "number": 37,
+            "name": "kill",
+            "desc": "send signal to a process"
+        },
+        "linux": {
+            "number": 62,
+            "name": "kill",
+            "desc": "send signal to a process"
+        }
+    },
+    "vhangup": {
+        "linux": {
+            "number": 153,
+            "name": "vhangup",
+            "desc": "virtually hangup the current terminal"
+        }
+    },
+    "__mac_set_fd": {
+        "darwin": {
+            "name": "__mac_set_fd",
+            "number": 389
+        }
+    },
+    "mkdirat": {
+        "darwin": {
+            "name": "mkdirat",
+            "number": 475
+        },
+        "linux": {
+            "number": 258,
+            "name": "mkdirat",
+            "desc": "create a directory"
+        }
+    },
+    "guarded_open_np": {
+        "darwin": {
+            "name": "guarded_open_np",
+            "number": 441
+        }
+    },
+    "futimes": {
+        "darwin": {
+            "number": 139,
+            "name": "futimes",
+            "desc": "set file access and modification times"
+        }
+    },
+    "__pthread_sigmask": {
+        "darwin": {
+            "name": "__pthread_sigmask",
+            "number": 329
+        }
+    },
+    "timerfd_gettime": {
+        "linux": {
+            "number": 287,
+            "name": "timerfd_gettime",
+            "desc": "timers that notify"
+        }
+    },
+    "adjtimex": {
+        "linux": {
+            "number": 159,
+            "name": "adjtimex",
+            "desc": "tune kernel clock"
+        }
+    },
+    "__mac_set_file": {
+        "darwin": {
+            "name": "__mac_set_file",
+            "number": 383
+        }
+    },
+    "fchownat": {
+        "darwin": {
+            "name": "fchownat",
+            "number": 468
+        },
+        "linux": {
+            "number": 260,
+            "name": "fchownat",
+            "desc": "change ownership of a file"
+        }
+    },
+    "migrate_pages": {
+        "linux": {
+            "number": 256,
+            "name": "migrate_pages",
+            "desc": "move all pages in a process to another set of nodes"
+        }
+    },
+    "getsockname": {
+        "darwin": {
+            "number": 32,
+            "name": "getsockname",
+            "desc": "get socket name"
+        },
+        "linux": {
+            "number": 51,
+            "name": "getsockname",
+            "desc": "get socket name"
+        }
+    },
+    "close": {
+        "darwin": {
+            "number": 6,
+            "name": "close",
+            "desc": "delete a descriptor"
+        },
+        "linux": {
+            "number": 3,
+            "name": "close",
+            "desc": "close a file descriptor"
+        }
+    },
+    "lsetxattr": {
+        "linux": {
+            "number": 189,
+            "name": "lsetxattr",
+            "desc": "set an extended attribute value"
+        }
+    },
+    "open_extended": {
+        "darwin": {
+            "name": "open_extended",
+            "number": 277
+        }
+    },
+    "lremovexattr": {
+        "linux": {
+            "number": 198,
+            "name": "lremovexattr",
+            "desc": "remove  an  extended"
+        }
+    },
+    "pselect6": {
+        "linux": {
+            "number": 270,
+            "name": "pselect6",
+            "desc": "synchronous I/O"
+        }
+    },
+    "msgget": {
+        "darwin": {
+            "name": "msgget",
+            "number": 259
+        },
+        "linux": {
+            "number": 68,
+            "name": "msgget",
+            "desc": "get a System V message queue identifier"
+        }
+    },
+    "bsdthread_terminate": {
+        "darwin": {
+            "name": "bsdthread_terminate",
+            "number": 361
+        }
+    },
+    "setprivexec": {
+        "darwin": {
+            "name": "setprivexec",
+            "number": 152
+        }
+    },
+    "workq_kernreturn": {
+        "darwin": {
+            "name": "workq_kernreturn",
+            "number": 368
+        }
+    },
+    "sigaltstack": {
+        "darwin": {
+            "number": 53,
+            "name": "sigaltstack",
+            "desc": "set and/or get signal stack context"
+        },
+        "linux": {
+            "number": 525,
+            "name": "sigaltstack",
+            "desc": "set and/or get signal stack context"
+        }
+    },
+    "sched_setattr": {
+        "linux": {
+            "number": 314,
+            "name": "sched_setattr",
+            "desc": "set  and  get scheduling policy and"
+        }
+    },
+    "sem_close": {
+        "darwin": {
+            "number": 269,
+            "name": "sem_close",
+            "desc": "close a named semaphore"
+        }
+    },
+    "thread_selfid": {
+        "darwin": {
+            "name": "thread_selfid",
+            "number": 372
+        }
+    },
+    "proc_rlimit_control": {
+        "darwin": {
+            "name": "proc_rlimit_control",
+            "number": 446
+        }
+    },
+    "fcntl": {
+        "darwin": {
+            "number": 92,
+            "name": "fcntl",
+            "desc": "file control"
+        },
+        "linux": {
+            "number": 72,
+            "name": "fcntl",
+            "desc": "manipulate file descriptor"
+        }
+    },
+    "__pthread_chdir": {
+        "darwin": {
+            "name": "__pthread_chdir",
+            "number": 348
+        }
+    },
+    "sync_file_range": {
+        "linux": {
+            "number": 277,
+            "name": "sync_file_range",
+            "desc": "sync a file segment with disk"
+        }
+    },
+    "lstat": {
+        "darwin": {
+            "number": 190,
+            "name": "lstat",
+            "desc": "get file status"
+        },
+        "linux": {
+            "number": 6,
+            "name": "lstat",
+            "desc": "get file status"
+        }
+    },
+    "msgsys": {
+        "darwin": {
+            "name": "msgsys",
+            "number": 252
+        }
+    },
+    "init_module": {
+        "linux": {
+            "number": 175,
+            "name": "init_module",
+            "desc": "load a kernel module"
+        }
+    },
+    "setresgid": {
+        "linux": {
+            "number": 119,
+            "name": "setresgid",
+            "desc": "set real, effective and saved user or group ID"
+        }
+    },
+    "rt_sigsuspend": {
+        "linux": {
+            "number": 130,
+            "name": "rt_sigsuspend",
+            "desc": "wait for a signal"
+        }
+    },
+    "semget": {
+        "darwin": {
+            "number": 255,
+            "name": "semget",
+            "desc": "obtain a semaphore id"
+        },
+        "linux": {
+            "number": 64,
+            "name": "semget",
+            "desc": "get a System V semaphore set identifier"
+        }
+    },
+    "seccomp": {
+        "linux": {
+            "number": 317,
+            "name": "seccomp",
+            "desc": "operate on Secure Computing state of the process"
+        }
+    },
+    "getdtablesize": {
+        "darwin": {
+            "number": 89,
+            "name": "getdtablesize",
+            "desc": "get descriptor table size"
+        }
+    },
+    "sigaction": {
+        "darwin": {
+            "number": 46,
+            "name": "sigaction",
+            "desc": "software signal facilities"
+        }
+    },
+    "setsockopt": {
+        "darwin": {
+            "number": 105,
+            "name": "setsockopt",
+            "desc": "get and set options on sockets"
+        },
+        "linux": {
+            "number": 541,
+            "name": "setsockopt",
+            "desc": "get and set options on sockets"
+        }
+    },
+    "lstat64": {
+        "darwin": {
+            "number": 340,
+            "name": "lstat64",
+            "desc": "get file status"
+        }
+    },
+    "undelete": {
+        "darwin": {
+            "number": 205,
+            "name": "undelete",
+            "desc": "attempt to recover a deleted file"
+        }
+    },
+    "initgroups": {
+        "darwin": {
+            "number": 243,
+            "name": "initgroups",
+            "desc": "initialize group access list"
+        }
+    },
+    "mremap_encrypted": {
+        "darwin": {
+            "name": "mremap_encrypted",
+            "number": 489
+        }
+    },
+    "prlimit64": {
+        "linux": {
+            "number": 302,
+            "name": "prlimit64",
+            "desc": "get/set resource limits"
+        }
+    },
+    "set_mempolicy": {
+        "linux": {
+            "number": 238,
+            "name": "set_mempolicy",
+            "desc": "set default NUMA memory policy for a thread and its"
+        }
+    },
+    "fanotify_init": {
+        "linux": {
+            "number": 300,
+            "name": "fanotify_init",
+            "desc": "create and initialize fanotify group"
+        }
+    },
+    "delete": {
+        "darwin": {
+            "name": "delete",
+            "number": 226
+        }
+    },
+    "connect_nocancel": {
+        "darwin": {
+            "name": "connect_nocancel",
+            "number": 409
+        }
+    },
+    "splice": {
+        "linux": {
+            "number": 275,
+            "name": "splice",
+            "desc": "splice data to/from a pipe"
+        }
+    },
+    "read_nocancel": {
+        "darwin": {
+            "name": "read_nocancel",
+            "number": 396
+        }
+    },
+    "chmod": {
+        "darwin": {
+            "number": 15,
+            "name": "chmod",
+            "desc": "change mode of file"
+        },
+        "linux": {
+            "number": 90,
+            "name": "chmod",
+            "desc": "change permissions of a file"
+        }
+    },
+    "rt_sigpending": {
+        "linux": {
+            "number": 522,
+            "name": "rt_sigpending",
+            "desc": "examine pending signals"
+        }
+    },
+    "setxattr": {
+        "darwin": {
+            "number": 236,
+            "name": "setxattr",
+            "desc": "set an extended attribute value"
+        },
+        "linux": {
+            "number": 188,
+            "name": "setxattr",
+            "desc": "set an extended attribute value"
+        }
+    },
+    "symlinkat": {
+        "darwin": {
+            "name": "symlinkat",
+            "number": 474
+        },
+        "linux": {
+            "number": 266,
+            "name": "symlinkat",
+            "desc": "make a new name for a file"
+        }
+    },
+    "shutdown": {
+        "darwin": {
+            "number": 134,
+            "name": "shutdown",
+            "desc": "shut down part of a full-duplex connection"
+        },
+        "linux": {
+            "number": 48,
+            "name": "shutdown",
+            "desc": "shut down part of a full-duplex connection"
+        }
+    },
+    "pread": {
+        "darwin": {
+            "number": 153,
+            "name": "pread",
+            "desc": "read input"
+        }
+    },
+    "fstat64_extended": {
+        "darwin": {
+            "name": "fstat64_extended",
+            "number": 343
+        }
+    },
+    "poll": {
+        "darwin": {
+            "number": 230,
+            "name": "poll",
+            "desc": "synchronous I/O multiplexing"
+        },
+        "linux": {
+            "number": 7,
+            "name": "poll",
+            "desc": "wait for some event on a file descriptor"
+        }
+    },
+    "setauid": {
+        "darwin": {
+            "number": 354,
+            "name": "setauid",
+            "desc": "set audit indentifier"
+        }
+    },
+    "sigprocmask": {
+        "darwin": {
+            "number": 48,
+            "name": "sigprocmask",
+            "desc": "manipulate current signal mask"
+        }
+    },
+    "open_nocancel": {
+        "darwin": {
+            "name": "open_nocancel",
+            "number": 398
+        }
+    },
+    "nanosleep": {
+        "linux": {
+            "number": 35,
+            "name": "nanosleep",
+            "desc": "high-resolution sleep"
+        }
+    },
+    "shmdt": {
+        "darwin": {
+            "number": 264,
+            "name": "shmdt",
+            "desc": "map/unmap shared memory"
+        },
+        "linux": {
+            "number": 67,
+            "name": "shmdt",
+            "desc": "System V shared memory operations"
+        }
+    },
+    "dup": {
+        "darwin": {
+            "number": 41,
+            "name": "dup",
+            "desc": "duplicate an existing file descriptor"
+        },
+        "linux": {
+            "number": 32,
+            "name": "dup",
+            "desc": "duplicate a file descriptor"
+        }
+    },
+    "chud": {
+        "darwin": {
+            "name": "chud",
+            "number": 185
+        }
+    },
+    "futimesat": {
+        "linux": {
+            "number": 261,
+            "name": "futimesat",
+            "desc": "change timestamps of a file relative to a directory file"
+        }
+    },
+    "mq_timedsend": {
+        "linux": {
+            "number": 242,
+            "name": "mq_timedsend",
+            "desc": "send a message to a message queue"
+        }
+    },
+    "set_robust_list": {
+        "linux": {
+            "number": 530,
+            "name": "set_robust_list",
+            "desc": "get/set list of robust futexes"
+        }
+    },
+    "shared_region_check_np": {
+        "darwin": {
+            "name": "shared_region_check_np",
+            "number": 294
+        }
+    },
+    "adjtime": {
+        "darwin": {
+            "number": 140,
+            "name": "adjtime",
+            "desc": "correct the time to allow synchronization of the system clock"
+        }
+    },
+    "aio_return": {
+        "darwin": {
+            "number": 314,
+            "name": "aio_return",
+            "desc": "retrieve return status of asynchronous I/O operation (REALTIME)"
+        }
+    },
+    "shmctl": {
+        "darwin": {
+            "number": 263,
+            "name": "shmctl",
+            "desc": "shared memory control operations"
+        },
+        "linux": {
+            "number": 31,
+            "name": "shmctl",
+            "desc": "System V shared memory control"
+        }
+    },
+    "execve": {
+        "darwin": {
+            "number": 59,
+            "name": "execve",
+            "desc": "execute a file"
+        },
+        "linux": {
+            "number": 520,
+            "name": "execve",
+            "desc": "execute program"
+        }
+    },
+    "madvise": {
+        "darwin": {
+            "number": 75,
+            "name": "madvise",
+            "desc": "give advice about use of memory"
+        },
+        "linux": {
+            "number": 28,
+            "name": "madvise",
+            "desc": "give advice about use of memory"
+        }
+    },
+    "mount": {
+        "darwin": {
+            "number": 167,
+            "name": "mount",
+            "desc": "mount or dismount a filesystem"
+        },
+        "linux": {
+            "number": 165,
+            "name": "mount",
+            "desc": "mount filesystem"
+        }
+    },
+    "getrusage": {
+        "darwin": {
+            "number": 117,
+            "name": "getrusage",
+            "desc": "get information about resource utilization"
+        },
+        "linux": {
+            "number": 98,
+            "name": "getrusage",
+            "desc": "get resource usage"
+        }
+    },
+    "fstatat": {
+        "darwin": {
+            "name": "fstatat",
+            "number": 469
+        }
+    },
+    "watchevent": {
+        "darwin": {
+            "name": "watchevent",
+            "number": 231
+        }
+    },
+    "minherit": {
+        "darwin": {
+            "number": 250,
+            "name": "minherit",
+            "desc": "control the inheritance of pages"
+        }
+    },
+    "fstat_extended": {
+        "darwin": {
+            "name": "fstat_extended",
+            "number": 281
+        }
+    },
+    "mbind": {
+        "linux": {
+            "number": 237,
+            "name": "mbind",
+            "desc": "set memory policy for a memory range"
+        }
+    },
+    "rename": {
+        "darwin": {
+            "number": 128,
+            "name": "rename",
+            "desc": "change the name of a file"
+        },
+        "linux": {
+            "number": 82,
+            "name": "rename",
+            "desc": "change the name or location of a file"
+        }
+    },
+    "identitysvc": {
+        "darwin": {
+            "name": "identitysvc",
+            "number": 293
+        }
+    },
+    "waitid_nocancel": {
+        "darwin": {
+            "name": "waitid_nocancel",
+            "number": 416
+        }
+    },
+    "geteuid": {
+        "darwin": {
+            "number": 25,
+            "name": "geteuid",
+            "desc": "get user identification"
+        },
+        "linux": {
+            "number": 107,
+            "name": "geteuid",
+            "desc": "get user identity"
+        }
+    },
+    "csops_audittoken": {
+        "darwin": {
+            "name": "csops_audittoken",
+            "number": 170
+        }
+    },
+    "openat_nocancel": {
+        "darwin": {
+            "name": "openat_nocancel",
+            "number": 464
+        }
+    },
+    "readv": {
+        "darwin": {
+            "number": 120,
+            "name": "readv",
+            "desc": "read input"
+        },
+        "linux": {
+            "number": 515,
+            "name": "readv",
+            "desc": "read or write data into multiple"
+        }
+    },
+    "prctl": {
+        "linux": {
+            "number": 157,
+            "name": "prctl",
+            "desc": "operations on a process"
+        }
+    },
+    "__mac_syscall": {
+        "darwin": {
+            "name": "__mac_syscall",
+            "number": 381
+        }
+    },
+    "unmount": {
+        "darwin": {
+            "number": 159,
+            "name": "unmount",
+            "desc": "mount or dismount a filesystem"
+        }
+    },
+    "sigsuspend_nocancel": {
+        "darwin": {
+            "name": "sigsuspend_nocancel",
+            "number": 410
+        }
+    },
+    "sched_getparam": {
+        "linux": {
+            "number": 143,
+            "name": "sched_getparam",
+            "desc": "set and get scheduling parameters"
+        }
+    },
+    "iopolicysys": {
+        "darwin": {
+            "name": "iopolicysys",
+            "number": 322
+        }
+    },
+    "__disable_threadsignal": {
+        "darwin": {
+            "name": "__disable_threadsignal",
+            "number": 331
+        }
+    },
+    "munlock": {
+        "darwin": {
+            "number": 204,
+            "name": "munlock",
+            "desc": "lock (unlock) physical pages in memory"
+        },
+        "linux": {
+            "number": 150,
+            "name": "munlock",
+            "desc": "lock and unlock memory"
+        }
+    },
+    "recvmsg": {
+        "darwin": {
+            "number": 27,
+            "name": "recvmsg",
+            "desc": "receive a message from a socket"
+        },
+        "linux": {
+            "number": 519,
+            "name": "recvmsg",
+            "desc": "receive a message from a socket"
+        }
+    },
+    "fstatfs": {
+        "darwin": {
+            "number": 158,
+            "name": "fstatfs",
+            "desc": "get file system statistics"
+        },
+        "linux": {
+            "number": 138,
+            "name": "fstatfs",
+            "desc": "get filesystem statistics"
+        }
+    },
+    "process_policy": {
+        "darwin": {
+            "name": "process_policy",
+            "number": 323
+        }
+    },
+    "mlock2": {
+        "linux": {
+            "number": 325,
+            "name": "mlock2",
+            "desc": "lock and unlock memory"
+        }
+    },
+    "pid_resume": {
+        "darwin": {
+            "name": "pid_resume",
+            "number": 434
+        }
+    },
+    "aio_suspend_nocancel": {
+        "darwin": {
+            "name": "aio_suspend_nocancel",
+            "number": 421
+        }
+    },
+    "mq_open": {
+        "linux": {
+            "number": 240,
+            "name": "mq_open",
+            "desc": "open a message queue"
+        }
+    },
+    "sysctlbyname": {
+        "darwin": {
+            "number": 274,
+            "name": "sysctlbyname",
+            "desc": "get or set system information"
+        }
+    },
+    "__mac_getfsstat": {
+        "darwin": {
+            "name": "__mac_getfsstat",
+            "number": 426
+        }
+    },
+    "audit": {
+        "darwin": {
+            "number": 350,
+            "name": "audit",
+            "desc": "commit BSM audit record to audit log"
+        }
+    },
+    "clock_adjtime": {
+        "linux": {
+            "name": "clock_adjtime",
+            "number": 305
+        }
+    },
+    "socket_delegate": {
+        "darwin": {
+            "name": "socket_delegate",
+            "number": 450
+        }
+    },
+    "auditon": {
+        "darwin": {
+            "number": 351,
+            "name": "auditon",
+            "desc": "configure system audit parameters"
+        }
+    },
+    "shared_region_map_and_slide_np": {
+        "darwin": {
+            "name": "shared_region_map_and_slide_np",
+            "number": 438
+        }
+    },
+    "aio_fsync": {
+        "darwin": {
+            "name": "aio_fsync",
+            "number": 313
+        }
+    },
+    "guarded_pwrite_np": {
+        "darwin": {
+            "name": "guarded_pwrite_np",
+            "number": 486
+        }
+    },
+    "psynch_rw_unlock2": {
+        "darwin": {
+            "name": "psynch_rw_unlock2",
+            "number": 309
+        }
+    },
+    "lio_listio": {
+        "darwin": {
+            "name": "lio_listio",
+            "number": 320
+        }
+    },
+    "setdomainname": {
+        "linux": {
+            "number": 171,
+            "name": "setdomainname",
+            "desc": "get/set NIS domain name"
+        }
+    },
+    "lseek": {
+        "darwin": {
+            "number": 199,
+            "name": "lseek",
+            "desc": "reposition read/write file offset"
+        },
+        "linux": {
+            "number": 8,
+            "name": "lseek",
+            "desc": "reposition read/write file offset"
+        }
+    },
+    "flistxattr": {
+        "darwin": {
+            "number": 241,
+            "name": "flistxattr",
+            "desc": "list extended attribute names"
+        },
+        "linux": {
+            "number": 196,
+            "name": "flistxattr",
+            "desc": "list extended attribute names"
+        }
+    },
+    "rt_sigtimedwait": {
+        "linux": {
+            "number": 523,
+            "name": "rt_sigtimedwait",
+            "desc": "synchronously wait for"
+        }
+    },
+    "__pthread_canceled": {
+        "darwin": {
+            "name": "__pthread_canceled",
+            "number": 333
+        }
+    },
+    "auditctl": {
+        "darwin": {
+            "number": 359,
+            "name": "auditctl",
+            "desc": "configure system audit parameters"
+        }
+    },
+    "recvmsg_nocancel": {
+        "darwin": {
+            "name": "recvmsg_nocancel",
+            "number": 401
+        }
+    },
+    "io_getevents": {
+        "linux": {
+            "number": 208,
+            "name": "io_getevents",
+            "desc": "read asynchronous I/O events from the completion queue"
+        }
+    },
+    "guarded_write_np": {
+        "darwin": {
+            "name": "guarded_write_np",
+            "number": 485
+        }
+    },
+    "getattrlistat": {
+        "darwin": {
+            "name": "getattrlistat",
+            "number": 476
+        }
+    },
+    "clock_getres": {
+        "linux": {
+            "number": 229,
+            "name": "clock_getres",
+            "desc": "clock and time functions"
+        }
+    },
+    "exchangedata": {
+        "darwin": {
+            "number": 223,
+            "name": "exchangedata",
+            "desc": "atomically exchange data between two files"
+        }
+    },
+    "preadv": {
+        "linux": {
+            "number": 534,
+            "name": "preadv",
+            "desc": "read or write data into multiple"
+        }
+    },
+    "fileport_makeport": {
+        "darwin": {
+            "name": "fileport_makeport",
+            "number": 430
+        }
+    },
+    "mmap": {
+        "darwin": {
+            "number": 197,
+            "name": "mmap",
+            "desc": "allocate memory, or map files or devices into memory"
+        },
+        "linux": {
+            "number": 9,
+            "name": "mmap",
+            "desc": "map or unmap files or devices into memory"
+        }
+    },
+    "timer_delete": {
+        "linux": {
+            "number": 226,
+            "name": "timer_delete",
+            "desc": "delete a POSIX per-process timer"
+        }
+    },
+    "lchown": {
+        "darwin": {
+            "number": 364,
+            "name": "lchown",
+            "desc": "change owner and group of a file"
+        },
+        "linux": {
+            "number": 94,
+            "name": "lchown",
+            "desc": "change ownership of a file"
+        }
+    },
+    "ioprio_set": {
+        "linux": {
+            "number": 251,
+            "name": "ioprio_set",
+            "desc": "get/set I/O scheduling class and priority"
+        }
+    },
+    "delete_module": {
+        "linux": {
+            "number": 176,
+            "name": "delete_module",
+            "desc": "unload a kernel module"
+        }
+    },
+    "guarded_close_np": {
+        "darwin": {
+            "name": "guarded_close_np",
+            "number": 442
+        }
+    },
+    "read": {
+        "darwin": {
+            "number": 3,
+            "name": "read",
+            "desc": "read input"
+        },
+        "linux": {
+            "number": 0,
+            "name": "read",
+            "desc": "read from a file descriptor"
+        }
+    },
+    "fchflags": {
+        "darwin": {
+            "number": 35,
+            "name": "fchflags",
+            "desc": "set file flags"
+        }
+    },
+    "ustat": {
+        "linux": {
+            "number": 136,
+            "name": "ustat",
+            "desc": "get filesystem statistics"
+        }
+    },
+    "renameat": {
+        "darwin": {
+            "name": "renameat",
+            "number": 465
+        },
+        "linux": {
+            "number": 264,
+            "name": "renameat",
+            "desc": "change the name or location of a file"
+        }
+    },
+    "fsync": {
+        "darwin": {
+            "number": 95,
+            "name": "fsync",
+            "desc": "synchronize a file's in-core state with that on disk"
+        },
+        "linux": {
+            "number": 74,
+            "name": "fsync",
+            "desc": "synchronize a file's in-core state with storage"
+        }
+    },
+    "bpf": {
+        "linux": {
+            "number": 321,
+            "name": "bpf",
+            "desc": "perform a command on an extended BPF map or program"
+        }
+    },
+    "epoll_pwait": {
+        "linux": {
+            "number": 281,
+            "name": "epoll_pwait",
+            "desc": "wait for an I/O event on an epoll file"
+        }
+    },
+    "__mac_set_lctx": {
+        "darwin": {
+            "name": "__mac_set_lctx",
+            "number": 393
+        }
+    },
+    "shmsys": {
+        "darwin": {
+            "name": "shmsys",
+            "number": 253
+        }
+    },
+    "kas_info": {
+        "darwin": {
+            "name": "kas_info",
+            "number": 439
+        }
+    },
+    "disconnectx": {
+        "darwin": {
+            "name": "disconnectx",
+            "number": 448
+        }
+    },
+    "getfsstat64": {
+        "darwin": {
+            "name": "getfsstat64",
+            "number": 347
+        }
+    },
+    "settid_with_pid": {
+        "darwin": {
+            "name": "settid_with_pid",
+            "number": 311
+        }
+    },
+    "psynch_mutexwait": {
+        "darwin": {
+            "name": "psynch_mutexwait",
+            "number": 301
+        }
+    },
+    "signalfd": {
+        "linux": {
+            "number": 282,
+            "name": "signalfd",
+            "desc": "create a file descriptor for accepting signals"
+        }
+    },
+    "sendmmsg": {
+        "linux": {
+            "number": 538,
+            "name": "sendmmsg",
+            "desc": "send multiple messages on a socket"
+        }
+    },
+    "kdebug_trace64": {
+        "darwin": {
+            "name": "kdebug_trace64",
+            "number": 179
+        }
+    },
+    "getresuid": {
+        "linux": {
+            "number": 118,
+            "name": "getresuid",
+            "desc": "get real, effective and saved user/group IDs"
+        }
+    },
+    "getitimer": {
+        "darwin": {
+            "number": 86,
+            "name": "getitimer",
+            "desc": "get/set value of interval timer"
+        },
+        "linux": {
+            "number": 36,
+            "name": "getitimer",
+            "desc": "get or set value of an interval timer"
+        }
+    },
+    "getlogin": {
+        "darwin": {
+            "number": 49,
+            "name": "getlogin",
+            "desc": "get/set login name"
+        }
+    },
+    "getgid": {
+        "darwin": {
+            "number": 47,
+            "name": "getgid",
+            "desc": "get group process identification"
+        },
+        "linux": {
+            "number": 104,
+            "name": "getgid",
+            "desc": "get group identity"
+        }
+    },
+    "proc_trace_log": {
+        "darwin": {
+            "name": "proc_trace_log",
+            "number": 477
+        }
+    },
+    "tgkill": {
+        "linux": {
+            "number": 234,
+            "name": "tgkill",
+            "desc": "send a signal to a thread"
+        }
+    },
+    "__sigwait": {
+        "darwin": {
+            "name": "__sigwait",
+            "number": 330
+        }
+    },
+    "msgctl": {
+        "darwin": {
+            "name": "msgctl",
+            "number": 258
+        },
+        "linux": {
+            "number": 71,
+            "name": "msgctl",
+            "desc": "System V message control operations"
+        }
+    },
+    "fremovexattr": {
+        "darwin": {
+            "number": 239,
+            "name": "fremovexattr",
+            "desc": "remove an extended attribute value"
+        },
+        "linux": {
+            "number": 199,
+            "name": "fremovexattr",
+            "desc": "remove  an  extended"
+        }
+    },
+    "exit": {
+        "darwin": {
+            "number": 1,
+            "name": "exit",
+            "desc": "perform normal program termination"
+        },
+        "linux": {
+            "number": 60,
+            "name": "exit",
+            "desc": "terminate the calling process"
+        }
+    },
+    "linkat": {
+        "darwin": {
+            "name": "linkat",
+            "number": 471
+        },
+        "linux": {
+            "number": 265,
+            "name": "linkat",
+            "desc": "make a new name for a file"
+        }
+    },
+    "inotify_rm_watch": {
+        "linux": {
+            "number": 255,
+            "name": "inotify_rm_watch",
+            "desc": "remove an existing watch from an inotify instance"
+        }
+    },
+    "setrlimit": {
+        "darwin": {
+            "number": 195,
+            "name": "setrlimit",
+            "desc": "control maximum system resource consumption"
+        },
+        "linux": {
+            "number": 160,
+            "name": "setrlimit",
+            "desc": "get/set resource limits"
+        }
+    },
+    "getdirentries": {
+        "darwin": {
+            "number": 196,
+            "name": "getdirentries",
+            "desc": "get directory entries in a filesystem independent format"
+        }
+    },
+    "__mac_set_proc": {
+        "darwin": {
+            "name": "__mac_set_proc",
+            "number": 387
+        }
+    },
+    "fchmod_extended": {
+        "darwin": {
+            "name": "fchmod_extended",
+            "number": 283
+        }
+    },
+    "timer_create": {
+        "linux": {
+            "number": 526,
+            "name": "timer_create",
+            "desc": "create a POSIX per-process timer"
+        }
+    },
+    "fchmodat": {
+        "darwin": {
+            "name": "fchmodat",
+            "number": 467
+        },
+        "linux": {
+            "number": 268,
+            "name": "fchmodat",
+            "desc": "change permissions of a file"
+        }
+    },
+    "inotify_add_watch": {
+        "linux": {
+            "number": 254,
+            "name": "inotify_add_watch",
+            "desc": "add a watch to an initialized inotify instance"
+        }
+    },
+    "fstatfs64": {
+        "darwin": {
+            "number": 346,
+            "name": "fstatfs64",
+            "desc": "get file system statistics"
+        }
+    },
+    "fstatat64": {
+        "darwin": {
+            "name": "fstatat64",
+            "number": 470
+        }
+    },
+    "symlink": {
+        "darwin": {
+            "number": 57,
+            "name": "symlink",
+            "desc": "make symbolic link to a file"
+        },
+        "linux": {
+            "number": 88,
+            "name": "symlink",
+            "desc": "make a new name for a file"
+        }
+    },
+    "fileport_makefd": {
+        "darwin": {
+            "name": "fileport_makefd",
+            "number": 431
+        }
+    },
+    "timer_gettime": {
+        "linux": {
+            "number": 224,
+            "name": "timer_gettime",
+            "desc": "arm/disarm and fetch state of POSIX"
+        }
+    },
+    "setegid": {
+        "darwin": {
+            "number": 182,
+            "name": "setegid",
+            "desc": "set user and group ID"
+        }
+    },
+    "sysinfo": {
+        "linux": {
+            "number": 99,
+            "name": "sysinfo",
+            "desc": "returns information on overall system statistics"
+        }
+    },
+    "shmat": {
+        "darwin": {
+            "number": 262,
+            "name": "shmat",
+            "desc": "map/unmap shared memory"
+        },
+        "linux": {
+            "number": 30,
+            "name": "shmat",
+            "desc": "System V shared memory operations"
+        }
+    },
+    "copy_file_range": {
+        "linux": {
+            "number": 326,
+            "name": "copy_file_range",
+            "desc": "Copy a range of data from one file to another"
+        }
+    },
+    "munlockall": {
+        "darwin": {
+            "name": "munlockall",
+            "number": 325
+        },
+        "linux": {
+            "number": 152,
+            "name": "munlockall",
+            "desc": "lock and unlock memory"
+        }
+    },
+    "msync": {
+        "darwin": {
+            "number": 65,
+            "name": "msync",
+            "desc": "synchronize a mapped region"
+        },
+        "linux": {
+            "number": 26,
+            "name": "msync",
+            "desc": "synchronize a file with a memory map"
+        }
+    },
+    "getdirentriesattr": {
+        "darwin": {
+            "name": "getdirentriesattr",
+            "number": 222
+        }
+    },
+    "ffsctl": {
+        "darwin": {
+            "name": "ffsctl",
+            "number": 245
+        }
+    },
+    "waitevent": {
+        "darwin": {
+            "name": "waitevent",
+            "number": 232
+        }
+    },
+    "msync_nocancel": {
+        "darwin": {
+            "name": "msync_nocancel",
+            "number": 405
+        }
+    },
+    "getegid": {
+        "darwin": {
+            "number": 43,
+            "name": "getegid",
+            "desc": "get group process identification"
+        },
+        "linux": {
+            "number": 108,
+            "name": "getegid",
+            "desc": "get group identity"
+        }
+    },
+    "access_extended": {
+        "darwin": {
+            "name": "access_extended",
+            "number": 284
+        }
+    },
+    "execveat": {
+        "linux": {
+            "number": 545,
+            "name": "execveat",
+            "desc": "execute program relative to a directory file descriptor"
+        }
+    },
+    "umount2": {
+        "linux": {
+            "number": 166,
+            "name": "umount2",
+            "desc": "unmount filesystem"
+        }
+    },
+    "getfh": {
+        "darwin": {
+            "number": 161,
+            "name": "getfh",
+            "desc": "get file handle"
+        }
+    },
+    "getattrlist": {
+        "darwin": {
+            "number": 220,
+            "name": "getattrlist",
+            "desc": "get file system attributes"
+        }
+    },
+    "kdebug_trace": {
+        "darwin": {
+            "name": "kdebug_trace",
+            "number": 180
+        }
+    },
+    "memorystatus_get_level": {
+        "darwin": {
+            "name": "memorystatus_get_level",
+            "number": 453
+        }
+    },
+    "select_nocancel": {
+        "darwin": {
+            "name": "select_nocancel",
+            "number": 407
+        }
+    },
+    "sendto_nocancel": {
+        "darwin": {
+            "name": "sendto_nocancel",
+            "number": 413
+        }
+    },
+    "umask_extended": {
+        "darwin": {
+            "name": "umask_extended",
+            "number": 278
+        }
+    },
+    "removexattr": {
+        "darwin": {
+            "number": 238,
+            "name": "removexattr",
+            "desc": "remove an extended attribute value"
+        },
+        "linux": {
+            "number": 197,
+            "name": "removexattr",
+            "desc": "remove  an  extended"
+        }
+    },
+    "quotactl": {
+        "darwin": {
+            "number": 165,
+            "name": "quotactl",
+            "desc": "manipulate filesystem quotas"
+        },
+        "linux": {
+            "number": 179,
+            "name": "quotactl",
+            "desc": "manipulate disk quotas"
+        }
+    },
+    "sendmsg_x": {
+        "darwin": {
+            "name": "sendmsg_x",
+            "number": 481
+        }
+    },
+    "psynch_cvclrprepost": {
+        "darwin": {
+            "name": "psynch_cvclrprepost",
+            "number": 312
+        }
+    },
+    "rmdir": {
+        "darwin": {
+            "number": 137,
+            "name": "rmdir",
+            "desc": "remove a directory file"
+        },
+        "linux": {
+            "number": 84,
+            "name": "rmdir",
+            "desc": "delete a directory"
+        }
+    },
+    "fsync_nocancel": {
+        "darwin": {
+            "name": "fsync_nocancel",
+            "number": 408
+        }
+    },
+    "fork": {
+        "darwin": {
+            "number": 2,
+            "name": "fork",
+            "desc": "create a new process"
+        },
+        "linux": {
+            "number": 57,
+            "name": "fork",
+            "desc": "create a child process"
+        }
+    },
+    "get_mempolicy": {
+        "linux": {
+            "number": 239,
+            "name": "get_mempolicy",
+            "desc": "retrieve NUMA memory policy for a thread"
+        }
+    },
+    "io_submit": {
+        "linux": {
+            "number": 544,
+            "name": "io_submit",
+            "desc": "submit asynchronous I/O blocks for processing"
+        }
+    },
+    "get_robust_list": {
+        "linux": {
+            "number": 531,
+            "name": "get_robust_list",
+            "desc": "get/set list of robust futexes"
+        }
+    },
+    "sched_yield": {
+        "linux": {
+            "number": 24,
+            "name": "sched_yield",
+            "desc": "yield the processor"
+        }
+    },
+    "link": {
+        "darwin": {
+            "number": 9,
+            "name": "link",
+            "desc": "make a hard file link"
+        },
+        "linux": {
+            "number": 86,
+            "name": "link",
+            "desc": "make a new name for a file"
+        }
+    },
+    "ptrace": {
+        "darwin": {
+            "number": 26,
+            "name": "ptrace",
+            "desc": "process tracing and debugging"
+        },
+        "linux": {
+            "number": 521,
+            "name": "ptrace",
+            "desc": "process trace"
+        }
+    },
+    "io_cancel": {
+        "linux": {
+            "number": 210,
+            "name": "io_cancel",
+            "desc": "cancel an outstanding asynchronous I/O operation"
+        }
+    },
+    "fallocate": {
+        "linux": {
+            "number": 285,
+            "name": "fallocate",
+            "desc": "manipulate file space"
+        }
+    },
+    "wait4": {
+        "darwin": {
+            "number": 7,
+            "name": "wait4",
+            "desc": "wait for process termination"
+        },
+        "linux": {
+            "number": 61,
+            "name": "wait4",
+            "desc": "wait for process to change state, BSD style"
+        }
+    },
+    "__mac_get_lcid": {
+        "darwin": {
+            "name": "__mac_get_lcid",
+            "number": 391
+        }
+    },
+    "timerfd_settime": {
+        "linux": {
+            "number": 286,
+            "name": "timerfd_settime",
+            "desc": "timers that notify"
+        }
+    },
+    "sched_setscheduler": {
+        "linux": {
+            "number": 144,
+            "name": "sched_setscheduler",
+            "desc": "set and get scheduling pol\u2010"
+        }
+    },
+    "chmod_extended": {
+        "darwin": {
+            "name": "chmod_extended",
+            "number": 282
+        }
+    },
+    "sfi_ctl": {
+        "darwin": {
+            "name": "sfi_ctl",
+            "number": 456
+        }
+    },
+    "getaudit_addr": {
+        "darwin": {
+            "number": 357,
+            "name": "getaudit_addr",
+            "desc": "retrieve audit session state"
+        }
+    },
+    "creat": {
+        "linux": {
+            "number": 85,
+            "name": "creat",
+            "desc": "open and possibly create a file"
+        }
+    },
+    "pread64": {
+        "linux": {
+            "number": 17,
+            "name": "pread64",
+            "desc": "read from or write to a file descriptor at a given"
+        }
+    },
+    "pread_nocancel": {
+        "darwin": {
+            "name": "pread_nocancel",
+            "number": 414
+        }
+    },
+    "stat64": {
+        "darwin": {
+            "number": 338,
+            "name": "stat64",
+            "desc": "get file status"
+        }
+    },
+    "vm_pressure_monitor": {
+        "darwin": {
+            "name": "vm_pressure_monitor",
+            "number": 296
+        }
+    },
+    "lstat_extended": {
+        "darwin": {
+            "name": "lstat_extended",
+            "number": 280
+        }
+    },
+    "telemetry": {
+        "darwin": {
+            "name": "telemetry",
+            "number": 451
+        }
+    },
+    "tkill": {
+        "linux": {
+            "number": 200,
+            "name": "tkill",
+            "desc": "send a signal to a thread"
+        }
+    },
+    "setpriority": {
+        "darwin": {
+            "number": 96,
+            "name": "setpriority",
+            "desc": "get/set program scheduling priority"
+        },
+        "linux": {
+            "number": 141,
+            "name": "setpriority",
+            "desc": "get/set program scheduling priority"
+        }
+    },
+    "mincore": {
+        "darwin": {
+            "number": 78,
+            "name": "mincore",
+            "desc": "determine residency of memory pages"
+        },
+        "linux": {
+            "number": 27,
+            "name": "mincore",
+            "desc": "determine whether pages are resident in memory"
+        }
+    },
+    "mq_notify": {
+        "linux": {
+            "number": 527,
+            "name": "mq_notify",
+            "desc": "register for notification when a message is available"
+        }
+    },
+    "sendfile": {
+        "darwin": {
+            "number": 337,
+            "name": "sendfile",
+            "desc": "send a file to a socket"
+        },
+        "linux": {
+            "number": 40,
+            "name": "sendfile",
+            "desc": "transfer data between file descriptors"
+        }
+    },
+    "stat": {
+        "darwin": {
+            "number": 188,
+            "name": "stat",
+            "desc": "get file status"
+        },
+        "linux": {
+            "number": 4,
+            "name": "stat",
+            "desc": "get file status"
+        }
+    },
+    "restart_syscall": {
+        "linux": {
+            "number": 219,
+            "name": "restart_syscall",
+            "desc": "restart a system call after interruption by a stop"
+        }
+    },
+    "truncate": {
+        "darwin": {
+            "number": 200,
+            "name": "truncate",
+            "desc": "truncate or extend a file to a specified length"
+        },
+        "linux": {
+            "number": 76,
+            "name": "truncate",
+            "desc": "truncate a file to a specified length"
+        }
+    },
+    "sigsuspend": {
+        "darwin": {
+            "number": 111,
+            "name": "sigsuspend",
+            "desc": "atomically release blocked signals and wait for interrupt"
+        }
+    },
+    "statfs64": {
+        "darwin": {
+            "number": 345,
+            "name": "statfs64",
+            "desc": "get file system statistics"
+        }
+    },
+    "readlink": {
+        "darwin": {
+            "number": 58,
+            "name": "readlink",
+            "desc": "read value of a symbolic link"
+        },
+        "linux": {
+            "number": 89,
+            "name": "readlink",
+            "desc": "read value of a symbolic link"
+        }
+    },
+    "psynch_rw_longrdlock": {
+        "darwin": {
+            "name": "psynch_rw_longrdlock",
+            "number": 297
+        }
+    },
+    "__mac_get_mount": {
+        "darwin": {
+            "name": "__mac_get_mount",
+            "number": 425
+        }
+    },
+    "getuid": {
+        "darwin": {
+            "number": 24,
+            "name": "getuid",
+            "desc": "get user identification"
+        },
+        "linux": {
+            "number": 102,
+            "name": "getuid",
+            "desc": "get user identity"
+        }
+    },
+    "setwgroups": {
+        "darwin": {
+            "name": "setwgroups",
+            "number": 289
+        }
+    },
+    "open_by_handle_at": {
+        "linux": {
+            "number": 304,
+            "name": "open_by_handle_at",
+            "desc": "obtain handle for a pathname"
+        }
+    },
+    "fpathconf": {
+        "darwin": {
+            "number": 192,
+            "name": "fpathconf",
+            "desc": "get configurable pathname variables"
+        }
+    },
+    "chown": {
+        "darwin": {
+            "number": 16,
+            "name": "chown",
+            "desc": "change owner and group of a file"
+        },
+        "linux": {
+            "number": 92,
+            "name": "chown",
+            "desc": "change ownership of a file"
+        }
+    },
+    "finit_module": {
+        "linux": {
+            "number": 313,
+            "name": "finit_module",
+            "desc": "load a kernel module"
+        }
+    },
+    "time": {
+        "linux": {
+            "number": 201,
+            "name": "time",
+            "desc": "get time in seconds"
+        }
+    },
+    "setaudit_addr": {
+        "darwin": {
+            "number": 358,
+            "name": "setaudit_addr",
+            "desc": "set audit session state"
+        }
+    }
+}

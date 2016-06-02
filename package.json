@@ -1,0 +1,17 @@
+{
+  "name": "ctrace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "bin" : { "ctrace" : "./bin/ctrace" },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandr Komlev <aleksandr.komlev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "lodash": "^4.11.2"
+  }
+}
