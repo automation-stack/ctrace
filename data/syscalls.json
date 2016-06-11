@@ -682,7 +682,7 @@
         "linux": {
             "number": 23,
             "name": "select",
-            "desc": "synchronous I/O"
+            "desc": "synchronous I/O multiplexing"
         }
     },
     "getsockopt": {

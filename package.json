@@ -16,10 +16,12 @@
     "strace",
     "syscall",
     "system call",
+    "benchmark",
+    "performance",
     "kernel",
     "well-formatted",
     "colored output",
-    "trobleshooting"
+    "troubleshooting"
   ],
   "bin": {
     "ctrace": "./bin/ctrace"

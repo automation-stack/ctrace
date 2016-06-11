@@ -19,7 +19,10 @@ RUN apt-get update --fix-missing
 #   strace required "--security-opt seccomp:unconfined" option on container running
 RUN apt-get update --fix-missing && \
     apt-get install -y curl \
+        wget \
         strace
+
+RUN curl -sL https://asciinema.org/install | sh
 
 # Install NodeJs
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get install -y nodejs
