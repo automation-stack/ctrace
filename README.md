@@ -67,7 +67,7 @@ Usage: ctrace [options]
 
 ### OSx : Dtrace cannot control executables signed with restricted entitlements
 
-As you may now Apple released their new OS X revision 10.11 this year with a great security feature built-in: System Integrity Protection. In a nutshell, this mechanism protects any system data and important filesystem components (like /System or /usr) from being modified by user; even if they are root. SIP also disables any use of code-injection and debugging techniques for third-party software, so some of your favorite hacks may not work anymore.
+As you may know Apple released their new OS X revision 10.11 this year with a great security feature built-in: System Integrity Protection. In a nutshell, this mechanism protects any system data and important filesystem components (like /System or /usr) from being modified by user; even if they are root. SIP also disables any use of code-injection and debugging techniques for third-party software, so some of your favorite hacks may not work anymore.
 ...
 
 #### Completely disable SIP
