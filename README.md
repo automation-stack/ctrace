@@ -25,7 +25,7 @@ What we see?! What NPM does to simply display help?
 
 **Сlearly there is something to improve!** :muscle:
 
-<img src="npm.png" />
+<img src="data/npm.png" />
 
 ## Features
 
