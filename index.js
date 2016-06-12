@@ -33,13 +33,20 @@ program
     });
 program.parse(process.argv);
 
+// Handle keyboard interrupting
+function interruption() {
+    log(chalk.yellow.bold('\nExecuting interrupted by signal ...'));
+}
+process.on('SIGTERM', interruption);
+process.on('SIGINT', interruption);
+
 // Platform specific binary and arguments
 var utility = {
-        'darwin': {bin: 'dtruss', args: ['-e', '-f', '-L']},
-        'linux': {bin: 'strace', args: ['-y', '-v', '-x', '-f', '-tt', '-T']}
+        darwin: { bin: 'dtruss', args: ['-e', '-f', '-L'] },
+        linux: { bin: 'strace', args: ['-y', '-v', '-x', '-f', '-tt', '-T'] }
     },
-    parser = { 'linux': parseStraceData, 'darwin': parseDtrussData},
-    report = {};
+    parser = { linux: parseStraceData, darwin: parseDtrussData },
+    report = { syscalls: {}, total: {time: 0, count: 0, errors: 0} };
 
 function getCommandLine() {
 
@@ -59,7 +66,87 @@ function getCommandLine() {
         program.help();
         process.exit();
     }
-    return {bin: utility[platform].bin, args: args};
+    return { bin: utility[platform].bin, args: args };
+}
+
+function collectStraceOutput(syscall, result, time) {
+
+    var exit = parseInt(result || 0, 10),
+        time = parseFloat(_.trim(time, '<>'), 10);
+    if (syscall) {
+        if (!report.syscalls[syscall.name]) {
+            report.syscalls[syscall.name] = {
+                name: syscall.name, count: 0, errors: {}, timings: []
+            };
+        }
+        var call = report.syscalls[syscall.name];
+        call.count += 1;
+        report.total.count += 1;
+        if (time) {
+            call.timings.push(time);
+            report.total.time += time;
+        }
+        if (exit < 0) {
+            var code = result.split(exit)[1].split('<')[0].trim();
+            if (!call.errors[code]) {
+                call.errors[code] = 1;
+            } else {
+                call.errors[code] += 1;
+            }
+            report.total.errors += 1;
+        }
+    }
+}
+
+function collectReport() {
+
+    var total = {time: 0, count: 0, errors: 0},
+        syscalls = [];
+    log(chalk.white.bold(Array(100).join('-')));
+    log(chalk.white.bold(
+        'syscall' + Array(10).join(' ') +
+        'time %' + Array(7).join(' ') +
+        'second' + Array(6).join(' ') +
+        'calls' + Array(15).join(' ') +
+        'description'
+    ));
+    log(chalk.white.bold(Array(100).join('-')));
+    syscalls = _.map(report.syscalls, function(syscall, name) {
+        syscall.total = 0;
+        // Calculate total syscalls time
+        _.each(syscall.timings, function(time) {
+            syscall.total += time;
+        });
+        syscall.percent = (syscall.total * 100 / report.total.time).toFixed(1);
+        return syscall;
+    }).sort(function(a, b) {
+        return b.percent - a.percent;
+    });
+    log(
+        chalk.white.bold('*'), '\t\t',
+        '100', '\t  ',
+        report.total.time.toFixed(6), '\t',
+        report.total.count, '\t'
+    );
+    _.each(syscalls, function(syscall) {
+        var name = syscall.name.length > 10
+            ? (syscall.name.substr(0, 10) + '...')
+            : syscall.name,
+            doc = getSyscall(syscall.name) || {};
+        log(
+            chalk.white.bold(name), syscall.name.length > 6 ? '\t' : '\t\t',
+            syscall.percent, '\t  ',
+            syscall.total.toFixed(6), '\t',
+            syscall.count, '\t',
+            doc ? doc.desc : '<undocumented>'
+        );
+        if (syscall.errors) {
+            _.each(syscall.errors, function(count, err) {
+                log(chalk.red.bold('  (' + count + ') ' + err));
+            });
+        }
+    });
+    log(chalk.white.bold(Array(100).join('-')));
 }
 
 function spawn() {
@@ -93,7 +180,9 @@ function spawn() {
         var irregularEnd = new RegExp('\>\d{2}', 'igm');
         // Search incompleted or irregular rows
         _.each(data, function(value, i) {
-            if (!value) { return; }
+            if (!value) {
+                return;
+            }
             // Glue incompleted rows
             if (!value.match(/\>$/)) {
                 if (value && data[i + 2]) {
@@ -106,7 +195,7 @@ function spawn() {
         parser[process.platform](data);
     });
     cp.on('exit', function(code, signal) {
-        log(chalk.white.bold('process: exit=' + code + ', signal=' + signal));
+        collectReport();
         process.exit();
     });
     return cp;
@@ -114,18 +203,24 @@ function spawn() {
 
 function getSyscall(name) {
 
-    if (!name) { return; }
+    if (!name) {
+        return;
+    }
     try {
         var cleaned = _.trim(name, '_'),
             p1 = new RegExp('^' + name + '|' + name + '$', 'gi'),
             p2 = new RegExp('^' + cleaned + '|' + cleaned + '$', 'gi'),
             syscall =
                 _.find(calls, function(v, k) {
-                    if (!v[platform]) { return false; }
+                    if (!v[platform]) {
+                        return false;
+                    }
                     return v[platform].name === name || v[platform].name === cleaned;
                 }) ||
                 _.find(calls, function(v, k) {
-                    if (!v[platform]) { return false; }
+                    if (!v[platform]) {
+                        return false;
+                    }
                     return v[platform].name.match(p1) || v[platform].name.match(p2);
                 });
         return {
@@ -146,37 +241,53 @@ function getSyscall(name) {
 function canIPrintIt(name, exit) {
 
     var filtered = program.filter && program.filter.length && program.filter.indexOf(name) == -1;
-    if (filtered) { return false; }
-    if (platform == 'darwin') { return program.verbose || !(exit >= 0); }
-    if (platform == 'linux') { return program.verbose || exit < 0; }
+    if (filtered) {
+        return false;
+    }
+    if (platform == 'darwin') {
+        return program.verbose || !(exit >= 0);
+    }
+    if (platform == 'linux') {
+        return program.verbose || exit < 0;
+    }
 }
+
+var pRegularRow = new RegExp('^(\\d{2}:|\\[).+\\d+>$'),
+    pFork = new RegExp('(\\[pid\\s+\\d+\\])\\s(.+)');
 
 function parseStraceData(data) {
 
     // Parse each syscall row and colorize chunks
     // Regular row pattern
-    var pRegularRow = new RegExp('^(\\d{2}:|\\[).+\\d+>$'),
-        pFork = new RegExp('(\\[pid\\s+\\d+\\])\\s(.+)');
     _.each(data, function (row) {
         // Ignore empty rows
-        if (!row) { return; }
+        if (!row) {
+            return;
+        }
         // Detect unfinished and resumed rows
         var unfinished = row.match(/unfinished/),
             resumed = row.match(/resumed/);
         // Detect regular (completed) rows
         if (!row.match(pRegularRow) && !row.split('(')[0].split(' ') && !unfinished && !resumed) {
-            log(chalk.grey(row.replace(/\s+/, ' '))); return;
+            log(chalk.grey(row.replace(/\s+/, ' ')));
+            return;
         }
         // Detect syscalls from child processes
         var fork = row.match(pFork);
         // Is syscall from forked process
-        if (fork) { row = fork[2], fork = fork[1].replace(/\s+/ig, ':');}
+        if (fork) {
+            row = fork[2];
+            fork = fork[1].replace(/\s+/ig, ':');
+        }
         // Parse unfinished call rows
         if (unfinished) {
             var _first = row.indexOf(' '),
                 timestamp = row.substr(0, _first).trim(),
                 name = row.substr(_first + 1, row.indexOf('(') - _first - 1).trim(),
                 syscall = getSyscall(name);
+
+            collectStraceOutput(syscall, result, time);
+
             if (canIPrintIt(name, exit) && syscall) {
                 log(
                     fork
@@ -195,6 +306,9 @@ function parseStraceData(data) {
                 timestamp = row.substr(0, _first).trim(),
                 name = row.split('<...')[1].trim().split('resumed')[0].trim(),
                 syscall = getSyscall(name);
+
+            collectStraceOutput(syscall, result, time);
+
             if (canIPrintIt(name, exit) && syscall) {
                 log(
                     fork
@@ -223,9 +337,13 @@ function parseStraceData(data) {
                 // Exit code
                 exit = result.substr(0, _first).trim(),
                 // Returned value
-                value = (result.split(/\s/).length == 2) ? '' : result.substr(_first, _last).trim(),
+                value = _.trim(
+                    (result.split(/\s/).length == 2) ? '' : result.substr(_first, _last).trim(), '<>'
+                ),
                 // Elapsed time
                 time = result.substr(_last + 1).trim();
+
+            collectStraceOutput(syscall, result, time);
 
             // Ignore syscalls not from the filter list
             if (canIPrintIt(name, exit) && syscall) {
@@ -256,10 +374,15 @@ function parseDtrussData(data) {
     // Parse each syscall row and colorize chunks
     _.each(data, function(row) {
         // Ignore empty rows
-        if (!row) { return; }
+        if (!row) {
+            return;
+        }
         if (!row.match(/^\s+\d+.+\d+$/)) {
-            if (row.match(/SYSCALL\(args\)/)) { return; }
-            log(chalk.grey(row)); return;
+            if (row.match(/SYSCALL\(args\)/)) {
+                return;
+            }
+            log(chalk.grey(row));
+            return;
         }
         row = row.split('\t');
         var // Detect syscalls from child processes

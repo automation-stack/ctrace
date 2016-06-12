@@ -11,6 +11,21 @@ Awesome tools ```strace``` and ```dtruss``` have only one drawback: too much inf
    - Debugging complex performance issues or not identified unhandled errors and exceptions in own code or someone else's code
    - Learning OS kernel
 
+## Let try it!
+
+What do you think how difficult it is to display a hint for using CLI utility, let us say NPM?
+
+```
+> ctrace -c "npm --help"
+```
+What we see?! What NPM does to simply display help?
+- 6819 system calls elapsed 790 msec!
+- 8 child processes :open_mouth:
+- aims to open over 400 files
+
+**Сlearly there is something to improve!** :muscle:
+
+<img src="npm.png" />
 
 ## Features
 
