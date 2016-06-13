@@ -11,7 +11,7 @@ Awesome tools ```strace``` and ```dtruss``` have only one drawback: too much inf
    - Debugging complex performance issues or not identified unhandled errors and exceptions in own code or someone else's code
    - Learning OS kernel
 
-## Let try it!
+## Let's try it!
 
 What do you think how difficult it is to display a hint for using CLI utility, let us say NPM?
 

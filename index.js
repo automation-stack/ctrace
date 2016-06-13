@@ -100,8 +100,10 @@ function collectStraceOutput(syscall, result, time) {
 
 function collectReport() {
 
-    var total = {time: 0, count: 0, errors: 0},
-        syscalls = [];
+    if (!report.total.count) {
+        return;
+    }
+    var syscalls = [];
     log(chalk.white.bold(Array(100).join('-')));
     log(chalk.white.bold(
         'syscall' + Array(10).join(' ') +
