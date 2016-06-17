@@ -19,7 +19,7 @@ What do you think how difficult it is to display a hint for using CLI utility, l
 > ctrace -c "npm --help"
 ```
 What we see?! What NPM does to simply display help?
-- over 7000 system calls elapsed 700 msec!
+- over 6800 system calls elapsed over 650 msec!
 - 7 child processes :open_mouth:
 - aims to open over 400 files
 
