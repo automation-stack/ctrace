@@ -4,6 +4,7 @@
 var child = require('child_process'),
     chalk = require('chalk'),
     program = require('commander'),
+    columnify = require('columnify'),
     calls = require('./data/syscalls'),
     errors = require('./data/errno'),
     _ = require('lodash'),
@@ -103,16 +104,8 @@ function collectReport() {
     if (!report.total.count) {
         return;
     }
-    var syscalls = [];
-    log(chalk.white.bold(Array(100).join('-')));
-    log(chalk.white.bold(
-        'syscall' + Array(10).join(' ') +
-        'time %' + Array(7).join(' ') +
-        'second' + Array(6).join(' ') +
-        'calls' + Array(15).join(' ') +
-        'description'
-    ));
-    log(chalk.white.bold(Array(100).join('-')));
+    var syscalls = [], columned = []
+
     syscalls = _.map(report.syscalls, function(syscall, name) {
         syscall.total = 0;
         // Calculate total syscalls time
@@ -124,31 +117,42 @@ function collectReport() {
     }).sort(function(a, b) {
         return b.percent - a.percent;
     });
-    log(
-        chalk.white.bold('*'), '\t\t',
-        '100', '\t  ',
-        report.total.time.toFixed(6), '\t',
-        report.total.count, '\t'
-    );
+    columned.push({
+        syscall: chalk.white.bold('*'),
+        'time %': 100,
+        second: chalk.white.bold(report.total.time.toFixed(6)),
+        calls: chalk.white.bold(report.total.count),
+        description: '-',
+        errorno: chalk.white.bold(report.total.errors)
+    })
     _.each(syscalls, function(syscall) {
         var name = syscall.name.length > 10
             ? (syscall.name.substr(0, 10) + '...')
             : syscall.name,
-            doc = getSyscall(syscall.name) || {};
-        log(
-            chalk.white.bold(name), syscall.name.length > 6 ? '\t' : '\t\t',
-            syscall.percent, '\t  ',
-            syscall.total.toFixed(6), '\t',
-            syscall.count, '\t',
-            doc ? doc.desc : '<undocumented>'
-        );
+            doc = getSyscall(syscall.name) || {},
+            row = {
+                syscall: chalk.white.bold(name),
+                'time %': syscall.percent,
+                second: syscall.total.toFixed(6),
+                calls:syscall.count,
+                description: doc ? doc.desc : '<undocumented>'
+            };
         if (syscall.errors) {
             _.each(syscall.errors, function(count, err) {
-                log(chalk.red.bold('  (' + count + ') ' + err));
+                row.errorno = chalk.red.bold(err) + ' (' + count +  ')';
             });
         }
+        columned.push(row);
     });
-    log(chalk.white.bold(Array(100).join('-')));
+
+    log(chalk.white.bold(Array(150).join('-')));
+    log(columnify(columned, {
+        minWidth: 10,
+        config: {
+            description: {maxWidth: 100}
+        }
+    }));
+    log(chalk.white.bold(Array(150).join('-')));
 }
 
 function spawn() {
