@@ -1,6 +1,6 @@
 {
   "name": "ctrace",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "well-formatted and improved trace system calls and signals (when the debugger does not help)",
   "main": "./index.js",
   "repository": {
