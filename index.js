@@ -123,7 +123,7 @@ function collectReport() {
         second: chalk.white.bold(report.total.time.toFixed(6)),
         calls: chalk.white.bold(report.total.count),
         description: '-',
-        errorno: chalk.white.bold(report.total.errors)
+        'errorno (count)': chalk.white.bold('(' + report.total.errors + ')')
     })
     _.each(syscalls, function(syscall) {
         var name = syscall.name.length > 10
@@ -137,10 +137,12 @@ function collectReport() {
                 calls:syscall.count,
                 description: doc ? doc.desc : '<undocumented>'
             };
-        if (syscall.errors) {
+        if (Object.keys(syscall.errors).length) {
             _.each(syscall.errors, function(count, err) {
-                row.errorno = chalk.red.bold(err) + ' (' + count +  ')';
+                row['errorno (count)'] = chalk.red.bold(err) + ' (' + count +  ') ';
             });
+        } else {
+            row['errorno (count)'] = '-';
         }
         columned.push(row);
     });
@@ -149,7 +151,9 @@ function collectReport() {
     log(columnify(columned, {
         minWidth: 10,
         config: {
-            description: {maxWidth: 100}
+            description: {
+                maxWidth: 150
+            }
         }
     }));
     log(chalk.white.bold(Array(150).join('-')));
