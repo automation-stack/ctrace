@@ -126,15 +126,12 @@ function collectReport() {
         'errorno (count)': chalk.white.bold('(' + report.total.errors + ')')
     })
     _.each(syscalls, function(syscall) {
-        var name = syscall.name.length > 10
-            ? (syscall.name.substr(0, 10) + '...')
-            : syscall.name,
-            doc = getSyscall(syscall.name) || {},
+        var doc = getSyscall(syscall.name) || {},
             row = {
-                syscall: chalk.white.bold(name),
+                syscall: chalk.white.bold(syscall.name),
                 'time %': syscall.percent,
                 second: syscall.total.toFixed(6),
-                calls:syscall.count,
+                calls: syscall.count,
                 description: doc ? doc.desc : '<undocumented>'
             };
         if (Object.keys(syscall.errors).length) {
@@ -151,6 +148,9 @@ function collectReport() {
     log(columnify(columned, {
         minWidth: 10,
         config: {
+            syscall: {
+                minWidth: 15
+            },
             description: {
                 maxWidth: 150
             }
