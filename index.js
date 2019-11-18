@@ -25,6 +25,7 @@ program
         return value.split(',');
     })
     .option('-v, --verbose', 'print all syscalls (by default only with errors)')
+    .option('-r, --force-color', 'force color output', chalk.enabled)
     .on('--help', function(){
         console.log('  Examples:');
         console.log('');
@@ -33,6 +34,8 @@ program
         console.log('');
     });
 program.parse(process.argv);
+
+chalk.enabled = program.forceColor
 
 // Handle keyboard interrupting
 function interruption() {
